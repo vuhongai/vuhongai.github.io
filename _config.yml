@@ -8,13 +8,12 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "sunrise" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Your Name / Site Title"
 title_separator          : "-"
 name                     : &name "Ai Vu Hong"
 description              : &description "Ai Vu Hong's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://vuhongai.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : https://vuhongai.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "vuhongai/vuhongai.github.io"
 
@@ -26,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Ai Vu Hong"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Research Scientist"
   location         : "France"
   employer         : "Genethon"
   uri              : # URL
