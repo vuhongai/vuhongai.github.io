@@ -1,7 +1,7 @@
 ---
 title: "An engineered AAV targeting integrin alpha V beta 6 presents improved myotropism across species"
 collection: publications
-# permalink: /publication/2024-aav-integrin
+permalink: /publication/2024-aav-integrin
 date: 2024-10-15
 venue: 'Nature Communications'
 paperurl: 'https://doi.org/10.1038/s41467-024-53171-8'
