@@ -59,9 +59,9 @@ def create_md(lines: list, layout: list):
         
         # Markdown description for individual page
         if len(str(item[layout.index('paper_url')])) > 5:
-            md += f"\n<a href='{item[layout.index('paper_url')]}'>Download paper here</a>\n"
+            md += f"\n<a href='{item[layout.index('paper_url')]}'>Link</a>\n"
         if len(str(item[layout.index('excerpt')])) > 5:
-            md += f"\n{html_escape(item[layout.index('excerpt')])}\n"
+            md += f"\nAbstract: {html_escape(item[layout.index('excerpt')])}\n"
         md += f"\nCitation: {item[layout.index('citation')]}"
         
         # Write the file
