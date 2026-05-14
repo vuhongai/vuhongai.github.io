@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-<div class="hero-section">
+<div class="hero-section" data-aos="fade-up">
   <h1 class="hero-name">Hong Ai Vu <span class="hero-phd">Ph.D.</span></h1>
-  <p class="hero-tagline">Research Scientist &nbsp;·&nbsp; Gene Therapy &nbsp;·&nbsp; AI-Driven Capsid Engineering</p>
+  <p class="hero-tagline"><span id="typed-tagline"></span></p>
   <p class="hero-affiliation">
     <a href="https://www.genethon.fr" target="_blank">Genethon</a> &nbsp;·&nbsp; 
     Integrare UMR_S951 &nbsp;·&nbsp; 
@@ -29,7 +29,7 @@ Since establishing my independent research activity in 2022, my team has develop
 
 ## Research Focus
 
-<div class="focus-grid">
+<div class="focus-grid" data-aos="fade-up" data-aos-delay="100">
   <div class="focus-card">
     <div class="focus-icon">🧬</div>
     <h3>AAV Capsid Engineering</h3>
@@ -56,21 +56,21 @@ Since establishing my independent research activity in 2022, my team has develop
 
 ## At a Glance
 
-<div class="stats-row">
+<div class="stats-row" data-aos="fade-up">
   <div class="stat-item">
-    <span class="stat-number">11</span>
+    <span class="stat-number" data-countup="11">11</span>
     <span class="stat-label">Publications</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number">5</span>
+    <span class="stat-number" data-countup="5">5</span>
     <span class="stat-label">Patents Filed</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number">5+</span>
+    <span class="stat-number" data-countup="5" data-suffix="+">5+</span>
     <span class="stat-label">Industry Partners</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number">5</span>
+    <span class="stat-number" data-countup="5">5</span>
     <span class="stat-label">Team Members</span>
   </div>
 </div>
@@ -79,7 +79,7 @@ Since establishing my independent research activity in 2022, my team has develop
 
 ## Selected Publications
 
-<div class="pub-list">
+<div class="pub-list" data-aos="fade-up">
   <div class="pub-item pub-highlight">
     <span class="pub-badge">Nature Communications · 2024</span><br>
     <strong>Vu Hong, A.*†, Suel, L.*, et al., Richard, I.†</strong><br>
@@ -133,7 +133,7 @@ Since establishing my independent research activity in 2022, my team has develop
 
 ## AI Models & Software
 
-<div class="software-list">
+<div class="software-list" data-aos="fade-up">
   <div class="software-item">
     <strong>AAVesm2_650M_800_v1</strong> — Encoder language model for AAV capsid sequences<br>
     <a href="https://huggingface.co/avuhong/AAVesm2_650M_800_v1" target="_blank">🤗 avuhong/AAVesm2_650M_800_v1</a>

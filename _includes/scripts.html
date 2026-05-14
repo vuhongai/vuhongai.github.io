@@ -1,3 +1,70 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<!-- Frontend design plugins: AOS · CountUp.js · Typed.js -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // ── AOS ──────────────────────────────────────────────────────────────
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 60
+      });
+    }
+
+    // ── Typed.js ─────────────────────────────────────────────────────────
+    var typedEl = document.getElementById('typed-tagline');
+    if (typedEl && typeof Typed !== 'undefined') {
+      new Typed('#typed-tagline', {
+        strings: [
+          'Research Scientist&nbsp;&nbsp;·&nbsp;&nbsp;Gene Therapy&nbsp;&nbsp;·&nbsp;&nbsp;AI-Driven Capsid Engineering',
+          'AAV Capsid Design&nbsp;&nbsp;·&nbsp;&nbsp;Machine Learning&nbsp;&nbsp;·&nbsp;&nbsp;Rare Diseases',
+          'Genethon&nbsp;&nbsp;·&nbsp;&nbsp;Integrare UMR_S951&nbsp;&nbsp;·&nbsp;&nbsp;Paris-Saclay'
+        ],
+        contentType: 'html',
+        typeSpeed: 38,
+        backSpeed: 18,
+        backDelay: 2800,
+        startDelay: 400,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|'
+      });
+    }
+
+    // ── CountUp.js ───────────────────────────────────────────────────────
+    var statsRow = document.querySelector('.stats-row');
+    if (statsRow && typeof CountUp !== 'undefined') {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.querySelectorAll('[data-countup]').forEach(function (el) {
+            var end    = parseFloat(el.getAttribute('data-countup'));
+            var suffix = el.getAttribute('data-suffix') || '';
+            var cu = new CountUp.CountUp(el, end, {
+              duration: 2,
+              suffix: suffix,
+              useEasing: true,
+              useGrouping: false
+            });
+            if (!cu.error) cu.start();
+          });
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.35 });
+      observer.observe(statsRow);
+    }
+
+  });
+}());
+</script>
+
 {% include analytics.html %}
