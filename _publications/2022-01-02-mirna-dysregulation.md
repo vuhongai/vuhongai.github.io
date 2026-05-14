@@ -1,4 +1,5 @@
 ---
+# curated
 title: "Deciphering the Molecular Mechanism of Incurable Muscle Disease by a Novel Method for the Interpretation of miRNA Dysregulation"
 collection: publications
 category: manuscripts

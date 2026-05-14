@@ -1,4 +1,5 @@
 ---
+# curated
 title: "Disease exacerbation in human DMD MYOrganoids enables gene therapy evaluation and unveils persistence of fibrotic activity"
 collection: publications
 category: manuscripts
