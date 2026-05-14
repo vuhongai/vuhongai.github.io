@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="hero-section">
   <h1 class="hero-name">Hong Ai Vu <span class="hero-phd">Ph.D.</span></h1>
-  <p class="hero-tagline">Research Scientist &nbsp;·&nbsp; Gene Therapy &nbsp;·&nbsp; AI-Driven Capsid Engineering</p>
+  <p class="hero-tagline">Research Scientist &nbsp;·&nbsp; Gene Therapy &nbsp;·&nbsp; AI-Driven AAV Engineering</p>
   <p class="hero-affiliation">
     <a href="https://www.genethon.fr" target="_blank">Genethon</a> &nbsp;·&nbsp; 
     Integrare UMR_S951 &nbsp;·&nbsp; 
