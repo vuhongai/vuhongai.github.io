@@ -20,6 +20,18 @@ $footer                     : #2C221A;
 $border                     : #DDD3C4;
 $border-dark                : #C8BEB2;
 
+$gray                       : #7a8288;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : mix(#fff, $gray, 50%);
+$lighter-gray               : mix(#fff, $gray, 90%);
+$danger-color               : #ee5f5b;
+$info-color                 : $primary-color;
+$notice-color               : $gray;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+$doc-font-size              : 16;
+
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 3px rgba(0, 0, 0, 0.08);
 $global-transition          : all 0.2s ease-in-out;
