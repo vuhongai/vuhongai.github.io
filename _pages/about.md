@@ -1,56 +1,148 @@
 ---
 permalink: /
-title: "Ai Vu Hong"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+<div class="hero-section">
+  <h1 class="hero-name">Hong Ai Vu <span class="hero-phd">Ph.D.</span></h1>
+  <p class="hero-tagline">Research Scientist &nbsp;·&nbsp; Gene Therapy &nbsp;·&nbsp; AI-Driven Capsid Engineering</p>
+  <p class="hero-affiliation">
+    <a href="https://www.genethon.fr" target="_blank">Genethon</a> &nbsp;·&nbsp; 
+    Integrare UMR_S951 &nbsp;·&nbsp; 
+    University Paris-Saclay, France
+  </p>
+</div>
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+---
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+## About
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+I am a permanent research scientist at [Genethon](https://www.genethon.fr), where I lead a multidisciplinary team at the interface of **gene therapy** and **artificial intelligence**. My work focuses on the computational design of next-generation AAV viral vectors — engineering new capsids with enhanced tissue-targeting, improved safety, and translational potential for rare diseases.
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+Since establishing my independent research activity in 2022, my team has developed novel AAV capsids now used in preclinical programs for Duchenne muscular dystrophy (DMD), limb-girdle muscular dystrophies, cardiac diseases, and myotonic dystrophy. Several capsids are under active licensing discussions with partners in France and the US.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+---
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+## Research Focus
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+<div class="focus-grid">
+  <div class="focus-card">
+    <div class="focus-icon">🧬</div>
+    <h3>AAV Capsid Engineering</h3>
+    <p>Rational computational design of AAV variants targeting skeletal muscle, heart, and brain — for gene therapy of rare diseases.</p>
+  </div>
+  <div class="focus-card">
+    <div class="focus-icon">🤖</div>
+    <h3>AI for Virology</h3>
+    <p>Building encoder and decoder language models for AAV capsid sequences to predict fitness, tropism, and manufacturing yield.</p>
+  </div>
+  <div class="focus-card">
+    <div class="focus-icon">🛡️</div>
+    <h3>Immune Evasion</h3>
+    <p>Engineering AAV capsids and artificial IgG-degrading proteins to overcome pre-existing anti-AAV immunity and enable re-administration.</p>
+  </div>
+  <div class="focus-card">
+    <div class="focus-icon">💊</div>
+    <h3>Translational Impact</h3>
+    <p>Bridging computation and experimentation — from in silico design to preclinical validation and industrial licensing.</p>
+  </div>
+</div>
 
-**Markdown generator**
+---
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+## At a Glance
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+<div class="stats-row">
+  <div class="stat-item">
+    <span class="stat-number">11</span>
+    <span class="stat-label">Publications</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">5</span>
+    <span class="stat-label">Patents Filed</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">5+</span>
+    <span class="stat-label">Industry Partners</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">5</span>
+    <span class="stat-label">Team Members</span>
+  </div>
+</div>
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+---
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+## Selected Publications
+
+<div class="pub-list">
+  <div class="pub-item pub-highlight">
+    <span class="pub-badge">Nature Communications · 2024</span><br>
+    <strong>Vu Hong, A.*†, Suel, L.*, et al., Richard, I.†</strong><br>
+    An engineered AAV targeting integrin alpha V beta 6 presents improved myotropism across species.<br>
+    <a href="https://www.nature.com/articles/s41467-024-52002-4" target="_blank">→ Read paper</a>
+  </div>
+  <div class="pub-item">
+    <span class="pub-badge">Science Advances · 2025</span><br>
+    <strong>Jaber, A., Palmieri, L., Bakour, R., Bourg N., Vu Hong, A., et al.</strong><br>
+    Lysosomal damage is a therapeutic target in Duchenne muscular dystrophy.
+  </div>
+  <div class="pub-item">
+    <span class="pub-badge">Life Science Alliance · 2023</span><br>
+    <strong>Vu Hong, A., et al.</strong><br>
+    Dlk1-Dio3 cluster miRNAs regulate mitochondrial functions in the dystrophic muscle in DMD.
+  </div>
+  <div class="pub-item">
+    <span class="pub-badge">J. Cachexia, Sarcopenia & Muscle · 2021</span><br>
+    <strong>Amor, F.*, Vu Hong, A.*, et al.</strong><br>
+    Cholesterol metabolism is a potential therapeutic target in Duchenne muscular dystrophy.
+  </div>
+</div>
+
+[→ Full publication list](/publications/)
+
+---
+
+## Current Projects
+
+- **Next-generation myotropic AAVs** (LICA1, LICA3) — muscle & heart targeting, in use at Genethon and multiple partners (RENOGENYX, Ascidian Therapeutics, Neocor Therapeutics, and more)
+- **General-purpose AI system** for AAV capsid proteins — large-scale sequence models for multi-property prediction
+- **Multi-organ AAV capsids** — simultaneous targeting of skeletal muscle, heart, and brain for systemic diseases
+- **Antibody evasion strategies** — capsid engineering and artificial IgG-degrading proteins for seropositive patients
+- **Muscle stem cell targeting** — enabling durable gene-editing strategies for muscular dystrophies
+
+---
+
+## Awards & Recognition
+
+| Year | Award |
+|------|-------|
+| 2023 | Excellence in Research Award — ASGCT |
+| 2023 | 3rd place, Cancer Immunotherapy Data Science Challenge 2 — Broad Institute & Topcoder |
+| 2023 | Travel Award — European Society of Gene & Cell Therapy |
+| 2021 | Runner-up Award — World Muscle Society |
+| 2017 | 1st in M.Sc. program (1st/28) — University Paris-Saclay |
+| 2012 | 1st in National University Entrance Exam — Vietnam |
+| 2011–2012 | Third prizes in National Mathematical Olympiad — Vietnam |
+
+---
+
+## AI Models & Software
+
+<div class="software-list">
+  <div class="software-item">
+    <strong>AAVesm2_650M_800_v1</strong> — Encoder language model for AAV capsid sequences<br>
+    <a href="https://huggingface.co/avuhong/AAVesm2_650M_800_v1" target="_blank">🤗 avuhong/AAVesm2_650M_800_v1</a>
+  </div>
+  <div class="software-item">
+    <strong>PiccoviralesGPT</strong> — Decoder language model for AAV capsid sequence generation<br>
+    <a href="https://huggingface.co/avuhong/PiccoviralesGPT" target="_blank">🤗 avuhong/PiccoviralesGPT</a>
+  </div>
+  <div class="software-item">
+    <strong>Fiber-to-fiber mapping</strong> — Algorithm for cross-sectional histology slide analysis
+  </div>
+</div>
