@@ -1,0 +1,49 @@
+/* ==========================================================================
+   ELEGANT THEME — warm ivory · cognac accent · single mode
+   ========================================================================== */
+
+$primary-color              : #7C5C3E;
+$dark-primary-color         : mix(#000, $primary-color, 35%);
+$darker-primary-color       : mix(#000, $primary-color, 55%);
+$light-primary-color        : mix(#fff, $primary-color, 55%);
+$lighter-primary-color      : mix(#fff, $primary-color, 85%);
+
+$background                 : #F5F0E8;
+$background-light           : #FAF7F2;
+$background-lighter         : #FFFFFF;
+$text                       : #1A1714;
+$text-muted                 : #5A5048;
+$link                       : #5C3D24;
+$link-dark                  : mix(#000, $link, 20%);
+$link-light                 : mix(#fff, $link, 30%);
+$footer                     : #2C221A;
+$border                     : #DDD3C4;
+$border-dark                : #C8BEB2;
+
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 3px rgba(0, 0, 0, 0.08);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 68px;
+$navicon-width              : 28px;
+$navicon-height              : 3px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+:root {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #{$footer};
+    --global-border-color               : #{$border};
+    --global-dark-border-color          : #{$border-dark};
+    --global-code-background-color      : #{$background-light};
+    --global-code-text-color            : #{$text-muted};
+    --global-fig-caption-color          : #{$text-muted};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$dark-primary-color};
+    --global-link-color-visited         : #{$link-light};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$primary-color};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #{$text-muted};
+    --global-thead-color                : #{$lighter-primary-color};
+}
