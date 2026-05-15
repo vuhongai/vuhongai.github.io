@@ -78,8 +78,8 @@ Interaction between *Clostridium difficile* Toxin B and its receptor, PVRL3.
 
 ## Patents
 
-1. **Vu Hong, A. (50%), Richard, I. (50%).** Accurate prediction of multiple AAV properties by deep learning (PCT/EP2024/082609).
-2. **Vu Hong, A. (50%), Richard, I. (50%).** Peptide-modified AAV capsid with enhanced muscle transduction efficiency (PCT/EP2023/065499, WO 2023/237748).
+1. **Vu Hong, A. (50%), Richard, I. (50%).** Peptide-modified AAV capsid with enhanced muscle transduction efficiency — LICA1 (WO 2023/237748), LICA3/4 (EP26305263.1), LICA5 (EP26305262.3).
+2. **Vu Hong, A. (50%), Richard, I. (50%).** Accurate prediction of multiple AAV properties by deep learning (PCT/EP2024/082609).
 3. **Vu Hong, A. (50%), Richard, I. (50%).** IgG-degrading AAV capsid for improved gene transfer (EP24306388).
 4. **Vu Hong, A. (50%), Richard, I. (50%).** Lysosome-targeting immunoglobulin degradation for improved AAV gene transfer (EP25306380.4).
 5. **Vu Hong, A. (50%), Richard, I. (50%).** Improved capsid tropism to skeletal and cardiac muscles by integrin targeting *(submitted 2026)*.
@@ -97,16 +97,20 @@ Interaction between *Clostridium difficile* Toxin B and its receptor, PVRL3.
 
 | Year | Award |
 |------|-------|
-| 2023 | Excellence in Research Award — ASGCT |
+| 2026 | Best Oral Presentation — AAV Vectors Workshop, SFTCG, France |
+| 2025 | DIM BioConvS Doctoral Grant (135 k€) |
+| 2023 | POC'UP Grant (100 k€) — SATT Paris-Saclay |
+| 2023 | Excellence in Research Award — ASGCT, USA |
+| 2023 | Meritorious Abstract Travel Award — ASGCT, USA |
 | 2023 | 3rd place, Cancer Immunotherapy Data Science Challenge 2 — Broad Institute & Topcoder |
 | 2023 | 4th place, Cancer Immunotherapy Data Science Challenge 1 — Broad Institute & Topcoder |
-| 2023 | Travel Award — Société Française de Thérapie Cellulaire et Génique (ESGCT) |
+| 2023 | Travel Award — ESGCT, Belgium |
 | 2021 | Runner-up Award — World Muscle Society |
-| 2018 | Fondagen grant for advanced training in Bioinformatics — Genepole |
+| 2018 | Grant for Advanced Training in Bioinformatics — Fondagen |
 | 2017–2020 | SDSV University Paris-Saclay Ph.D. Scholarship |
 | 2016–2017 | International Scholarship IDEX Paris-Saclay (Master) |
-| 2012–2016 | VNU University of Science Scholarship for study achievements |
 | 2015 | Vanderbilt International Summer Research Academy Scholarship |
+| 2012–2016 | VNU University of Science Scholarship for study achievements |
 | 2012 | First Place in National University Entrance Exam — Vietnam |
 | 2011–2012 | Third prizes in National Mathematical Olympiad — Vietnam |
 
