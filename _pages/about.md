@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -12,18 +12,22 @@ redirect_from:
   <p class="hero-tagline">Research Scientist &nbsp;·&nbsp; Gene Therapy &nbsp;·&nbsp; AI-Driven AAV Engineering</p>
   <p class="hero-affiliation">
     <a href="https://www.genethon.fr" target="_blank">Genethon</a> &nbsp;·&nbsp; 
-    Integrare UMR_S951 &nbsp;·&nbsp; 
+    INSERM Integrare UMR_S951 &nbsp;·&nbsp; 
     University Paris-Saclay, France
   </p>
 </div>
 
 ---
 
-## About
+## About Me
 
-I am a permanent research scientist at [Genethon](https://www.genethon.fr), where I lead a multidisciplinary team at the interface of **gene therapy** and **artificial intelligence**. My work focuses on the computational design of next-generation AAV viral vectors — engineering new capsids with enhanced tissue-targeting, improved safety, and translational potential for rare diseases.
+I build the tools and pipelines to discover better gene therapy vectors — then use them to tackle the field's hardest problems.
 
-Since establishing my independent research activity in 2022, my team has developed novel AAV capsids now used in preclinical programs for Duchenne muscular dystrophy (DMD), limb-girdle muscular dystrophies, cardiac diseases, and myotonic dystrophy. Several capsids are under active licensing discussions with partners in France and the US.
+At [Genethon](https://www.genethon.fr), I lead a team at the intersection of **AAV capsid engineering**, **AI-driven design**, and **high-throughput biology**. Our fully in-house platform spans *in silico* library design, high-throughput cloning (up to 10¹⁵ diversity), functional screening, and preclinical validation — built to solve what others avoid: **comprehensive capsid optimization across targeting, manufacturing, and immunity simultaneously**. Six patents in under four years reflect both the novelty and the pace of what we build.
+
+The translational results speak for themselves: since 2022, the team has grown from one to six and produced novel capsids now advancing in preclinical programs for DMD, LGMDs, DM1, FSHD, and cardiac diseases — with several under active licensing discussions in Europe and the US.
+
+I also develop the AI agents, bioinformatics pipelines, and research software that run the lab — because the shortest path from algorithm to patient requires computation and experimentation to be inseparable.
 
 ---
 
@@ -33,22 +37,32 @@ Since establishing my independent research activity in 2022, my team has develop
   <div class="focus-card">
     <div class="focus-icon">🧬</div>
     <h3>AAV Capsid Engineering</h3>
-    <p>Rational computational design of AAV variants targeting skeletal muscle, heart, and brain — for gene therapy of rare diseases.</p>
+    <p>Rational and AI-driven design of novel AAV variants optimized across three axes: tissue targeting (skeletal muscle — myofibers and stem cells, heart, and brain), manufacturing (production yield and purification), and immune evasion — powering gene therapy programs for DMD, LGMDs, DM1, FSHD, and cardiac diseases.</p>
+  </div>
+  <div class="focus-card">
+    <div class="focus-icon">🔬</div>
+    <h3>End-to-End Discovery Pipeline</h3>
+    <p>A fully in-house platform — from <em>in silico</em> library design and high-throughput cloning (up to 10¹⁵ diversity) to large-scale functional screening, AI-guided design iteration, and experimental validation in 2D/3D cell models, mouse (WT and disease), and NHP.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">🤖</div>
-    <h3>AI for Virology</h3>
-    <p>Building encoder and decoder language models for AAV capsid sequences to predict fitness, tropism, and manufacturing yield.</p>
+    <h3>AI for Gene Therapy & Lab Intelligence</h3>
+    <p>Building encoder and decoder language models for parvovirus capsid sequences to predict fitness, tropism, and yield. Developing and maintaining AI agents that automate discovery workflows, bioinformatics pipelines, and lab management.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">🛡️</div>
-    <h3>Immune Evasion</h3>
-    <p>Engineering AAV capsids and artificial IgG-degrading proteins to overcome pre-existing anti-AAV immunity and enable re-administration.</p>
+    <h3>Antibody Clearance</h3>
+    <p>Designing <em>de novo</em> IgG-degrading proteins — enabling safe AAV vector re-administration and opening new therapeutic avenues in IgG-mediated autoimmune diseases.</p>
+  </div>
+  <div class="focus-card">
+    <div class="focus-icon">⚙️</div>
+    <h3>Computational Tools & Software</h3>
+    <p>Developing bespoke research software: automated image quantification for muscle histology, transcriptomic analysis pipelines, a fiber-fiber mapping tool for single-fiber resolution augmentation, and language models for viral sequence analysis.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">💊</div>
     <h3>Translational Impact</h3>
-    <p>Bridging computation and experimentation — from in silico design to preclinical validation and industrial licensing.</p>
+    <p>Bridging computation and clinic — from <em>in silico</em> design to preclinical validation and industrial licensing, with active partnerships in Europe and the US.</p>
   </div>
 </div>
 
@@ -58,19 +72,19 @@ Since establishing my independent research activity in 2022, my team has develop
 
 <div class="stats-row">
   <div class="stat-item">
-    <span class="stat-number">11</span>
-    <span class="stat-label">Publications</span>
+    <span class="stat-number">6</span>
+    <span class="stat-label">Patents Filed</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number">5</span>
-    <span class="stat-label">Patents Filed</span>
+    <span class="stat-number">14</span>
+    <span class="stat-label">Publications</span>
   </div>
   <div class="stat-item">
     <span class="stat-number">5+</span>
     <span class="stat-label">Industry Partners</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number">5</span>
+    <span class="stat-number">6</span>
     <span class="stat-label">Team Members</span>
   </div>
 </div>
@@ -80,16 +94,16 @@ Since establishing my independent research activity in 2022, my team has develop
 ## Selected Publications
 
 <div class="pub-list">
+  <div class="pub-item">
+    <span class="pub-badge">Preprint · 2026</span><br>
+    <strong>Suel, L.*, Petat, E.*, Bet al., Richard, I.†, Vu Hong, A.†</strong><br>
+    AI-designed AAV capsids deliver high-efficiency muscle gene transfer for low-dose therapy.
+  </div>
   <div class="pub-item pub-highlight">
     <span class="pub-badge">Nature Communications · 2024</span><br>
     <strong>Vu Hong, A.*†, Suel, L.*, et al., Richard, I.†</strong><br>
     An engineered AAV targeting integrin alpha V beta 6 presents improved myotropism across species.<br>
     <a href="https://www.nature.com/articles/s41467-024-52002-4" target="_blank">→ Read paper</a>
-  </div>
-  <div class="pub-item">
-    <span class="pub-badge">Science Advances · 2025</span><br>
-    <strong>Jaber, A., Palmieri, L., Bakour, R., Bourg N., Vu Hong, A., et al.</strong><br>
-    Lysosomal damage is a therapeutic target in Duchenne muscular dystrophy.
   </div>
   <div class="pub-item">
     <span class="pub-badge">Life Science Alliance · 2023</span><br>
@@ -107,42 +121,22 @@ Since establishing my independent research activity in 2022, my team has develop
 
 ---
 
-## Current Projects
-
-- **Next-generation myotropic AAVs** (LICA1, LICA3) — muscle & heart targeting, in use at Genethon and multiple partners (RENOGENYX, Ascidian Therapeutics, Neocor Therapeutics, and more)
-- **General-purpose AI system** for AAV capsid proteins — large-scale sequence models for multi-property prediction
-- **Multi-organ AAV capsids** — simultaneous targeting of skeletal muscle, heart, and brain for systemic diseases
-- **Antibody evasion strategies** — capsid engineering and artificial IgG-degrading proteins for seropositive patients
-- **Muscle stem cell targeting** — enabling durable gene-editing strategies for muscular dystrophies
-
----
-
 ## Awards & Recognition
 
 | Year | Award |
 |------|-------|
+| 2026 | Best Oral Presentation — Société Française de Thérapie Cellulaire et Génique |
+| 2023 | Travel Award — ASGCT |
 | 2023 | Excellence in Research Award — ASGCT |
 | 2023 | 3rd place, Cancer Immunotherapy Data Science Challenge 2 — Broad Institute & Topcoder |
-| 2023 | Travel Award — European Society of Gene & Cell Therapy |
+| 2023 | 4th place, Cancer Immunotherapy Data Science Challenge 1 — Broad Institute & Topcoder |
+| 2023 | Travel Award — Société Française de Thérapie Cellulaire et Génique (ESGCT) |
 | 2021 | Runner-up Award — World Muscle Society |
-| 2017 | 1st in M.Sc. program (1st/28) — University Paris-Saclay |
-| 2012 | 1st in National University Entrance Exam — Vietnam |
-| 2011–2012 | Third prizes in National Mathematical Olympiad — Vietnam |
-
----
-
-## AI Models & Software
-
-<div class="software-list">
-  <div class="software-item">
-    <strong>AAVesm2_650M_800_v1</strong> — Encoder language model for AAV capsid sequences<br>
-    <a href="https://huggingface.co/avuhong/AAVesm2_650M_800_v1" target="_blank">🤗 avuhong/AAVesm2_650M_800_v1</a>
-  </div>
-  <div class="software-item">
-    <strong>PiccoviralesGPT</strong> — Decoder language model for AAV capsid sequence generation<br>
-    <a href="https://huggingface.co/avuhong/PiccoviralesGPT" target="_blank">🤗 avuhong/PiccoviralesGPT</a>
-  </div>
-  <div class="software-item">
-    <strong>Fiber-to-fiber mapping</strong> — Algorithm for cross-sectional histology slide analysis
-  </div>
-</div>
+| 2018 | Fondagen grant for advanced training in Bioinformatics — Genepole |
+| 2017–2020 | SDSV University Paris-Saclay Ph.D. Scholarship |
+| 2016–2017 | International Scholarship IDEX Paris-Saclay (Master) |
+| 2012–2016 | VNU University of Science Scholarship for study achievements |
+| 2015 | Vanderbilt International Summer Research Academy Scholarship |
+| 2012 | First Place in National University Entrance Exam — Vietnam |
+| 2012 | Third prizes in National Mathematical Olympiad — Vietnam |
+| 2011 | Third prizes in National Mathematical Olympiad — Vietnam |
