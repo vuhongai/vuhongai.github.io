@@ -11,26 +11,45 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+<style>
+  .pub-list {
+    list-style: none;
+    counter-reset: pub-counter;
+    padding: 0;
+  }
+  .pub-list li {
+    counter-increment: pub-counter;
+    display: flex;
+    gap: 0.6em;
+    margin-bottom: 0.8em;
+    line-height: 1.5;
+  }
+  .pub-list li::before {
+    content: counter(pub-counter) ".";
+    min-width: 2em;
+    text-align: right;
+    flex-shrink: 0;
+    color: inherit;
+  }
+  .pub-list a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .pub-list a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+{% assign all_pubs = site.publications | sort: "date" | reverse %}
+
+<ol class="pub-list">
+  {% for post in all_pubs %}
+    <li>
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank">{{ post.citation }}</a>
+      {% else %}
+        {{ post.citation }}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+    </li>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+</ol>
