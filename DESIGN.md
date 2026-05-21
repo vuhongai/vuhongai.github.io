@@ -190,11 +190,11 @@ components:
 
 ## Philosophy
 
-The design is rooted in **classical academic elegance** — the kind found in a well-typeset monograph, not a startup landing page. Every decision reinforces three qualities:
+The design adapts Cursor's warm studio precision to an academic portfolio context. Every decision reinforces three qualities:
 
-1. **Warmth** — ivory backgrounds and cognac accents feel welcoming, not clinical.
-2. **Authority** — serif headings (Cormorant Garamond) signal scholarly weight without stuffiness.
-3. **Clarity** — Inter as the body typeface keeps reading fast and modern.
+1. **Precision** — Pebble Gray elevated cards with layered shadow system signal craft without decoration.
+2. **Authority** — EB Garamond headings and Cormorant Garamond hero text preserve scholarly weight.
+3. **Clarity** — Lato as the UI/body typeface replaces Inter for a slightly warmer, more humanist feel.
 
 There is **no dark mode**. The site forces `data-theme="light"` on load. Do not introduce dark-mode variants.
 
@@ -231,13 +231,13 @@ The `onyx-orange` (#f54e00) on `canvas-parchment` (#f7f7f4) is a very high-contr
 
 | Role | Family | Weight | Notes |
 |---|---|---|---|
-| Display / H1 | Cormorant Garamond | 600 | Hero name, large headings |
-| Headings H2–H6 | See below | — | H2 is overridden to Inter uppercase |
-| Section label (H2 override) | Inter | 700 | 0.72rem, uppercase, 0.18em spacing |
-| Body | Inter | 400 | 15.5px base, 1.7 line-height |
-| Navigation | Inter | 500 | 0.8rem, uppercase, 0.1em spacing |
-| Badges / labels | Inter | 600 | 0.65–0.72rem, uppercase |
-| Captions / blockquotes | Cormorant Garamond | 400 italic | |
+| Hero name only | Cormorant Garamond | 600 | `.hero-name` ONLY — no other use |
+| Content headings H3, author name, archive titles | EB Garamond | 400/500 | `-0.01em` letter-spacing |
+| Section label (H2 override) | Lato | 700 | 0.68rem, uppercase, 0.18em spacing, Muted Stone color |
+| Body | Lato | 400 | 15px base, 1.65 line-height |
+| Navigation | Lato | 600 | 0.73rem, uppercase, 0.1em spacing |
+| Badges / labels | Lato | 600 | 0.61–0.68rem, uppercase |
+| Stats numbers | Cormorant Garamond | 600 | 2.6rem, Inkwell color (not orange) |
 | Code | Monaco, Consolas, Lucida Console | — | |
 
 ### Critical rule
@@ -269,19 +269,19 @@ H2 inside `.page__content` is intentionally styled as a **small-caps label** (In
 
 ### Focus cards (`.focus-card`)
 
-Four-column grid on desktop, 2-col at `small`, 1-col at `400px`. Cards use the light background (`#FAF7F2`), a 1px warm border, and lift `translateY(-2px)` with cognac border on hover. Icon emoji at `1.4rem`, title in Inter uppercase `0.7rem`, body at `0.84rem`. **Do not add drop shadows at rest** — only on hover.
+Four-column grid on desktop, 2-col at `small`, 1-col at `400px`. Cards use Pebble Gray background (`#e6e5e0`), no border, `border-radius: 4px`, and `shadow-subtle` at rest. On hover: `translateY(-2px)` + `shadow-xl`. Icon emoji at `1.3rem`, title in Lato uppercase `0.68rem`, body at `0.83rem` Muted Stone. **Cards elevate via shadow, not border changes.**
 
 ### Publication items (`.pub-item`)
 
-Left-bordered cards. Default border is `#DDD3C4`; highlighted items (`.pub-highlight`) and hover state use the cognac primary. Background is `#FAF7F2`. Badges use Inter uppercase at `0.65rem` with a 1px cognac border and `2px` border-radius. Keep padding at `1rem 1.2rem 1rem 1.1rem` — the asymmetric left padding aligns copy with the border's visual weight.
+Pebble Gray cards with `shadow-subtle` at rest, `shadow-xl` on hover. `.pub-highlight` items get a `2px solid onyx-orange` left border. Badges use Lato uppercase at `0.61rem` with a 1px onyx-orange border and `2px` border-radius and orange text.
 
 ### Stats row (`.stats-row`)
 
-Flex row with `2.5rem` gap. Numbers in Cormorant Garamond 600 at `2.8rem`, cognac color. Labels in Inter 600 uppercase `0.68rem` at 50% opacity. Separated from surrounding content by `1px` warm borders top and bottom. CountUp.js animates numbers on scroll-into-view — always set both `data-countup` (end value) and a fallback text content for no-JS.
+Flex row with `2.5rem` gap. Numbers in Cormorant Garamond 600 at `2.6rem`, **Inkwell color** (not orange). Labels in Lato 600 uppercase `0.63rem`, Muted Stone. Separated from surrounding content by `1px` Highlight Beige borders top and bottom. CountUp.js animates numbers on scroll-into-view — always set both `data-countup` (end value) and a fallback text content for no-JS.
 
 ### Section headings (H2)
 
-Inside `.page__content`, H2 is overridden: Inter 700, `0.72rem`, uppercase, `0.18em` letter-spacing, cognac color, `1px` warm border-bottom, `3rem` top margin, `1.2rem` bottom margin. This is intentional — it creates a label-style divider, not a typographic heading.
+Inside `.page__content`, H2 is overridden: Lato 700, `0.68rem`, uppercase, `0.18em` letter-spacing, **Muted Stone color** (not orange), `1px` Highlight Beige border-bottom, `3.5rem` top margin, `1.4rem` bottom margin. This creates a label-style divider, not a typographic heading.
 
 ---
 
@@ -300,11 +300,12 @@ When adding new sections to `about.md`, always add `data-aos="fade-up"` to the o
 ## What to avoid
 
 - **Dark backgrounds inside content** — the theme is light-only; dark surfaces feel foreign.
-- **Saturated accent colors** — the cognac palette is deliberately desaturated. Do not introduce blues, greens, or bright reds.
-- **Sans-serif display text** — large hero text must stay in Cormorant Garamond.
-- **Box shadows at rest** — reserve shadows for hover/active states only.
-- **Inline `color:` styles that hardcode hex** — always use CSS custom properties (`var(--global-base-color)`, etc.) so the theme file remains the single source of truth.
+- **Using orange for non-interactive text** — Onyx Orange is reserved for interactive affordances (links, hover, badges, `.pub-highlight` border). Stats numbers and section labels use Inkwell and Muted Stone respectively.
+- **Sans-serif display text** — hero name must stay in Cormorant Garamond. Content headings use EB Garamond.
+- **Hardcoding cognac (#7C5C3E) or old ivory (#F5F0E8)** — the palette has migrated to Cursor tokens. Always use CSS custom properties (`var(--color-inkwell)`, `var(--color-pebble-gray)`, etc.).
+- **Inline `color:` styles that hardcode hex** — always use CSS custom properties so the theme file remains the single source of truth.
 - **Removing the `data-theme="light"` lock** — do not delete the `localStorage.setItem("theme", "light")` script in `_includes/head/custom.html`.
+- **Loading extra Cormorant Garamond weights** — only weight 600 normal and weight 400 italic are loaded. Do not add other weights.
 
 ---
 
