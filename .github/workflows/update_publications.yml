@@ -1,0 +1,34 @@
+name: Update Publications
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # every Monday at 06:00 UTC
+  workflow_dispatch:        # allow manual trigger from GitHub Actions UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests scholarly
+
+      - name: Run update script
+        run: python scripts/update_publications.py
+
+      - name: Commit new publications
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _publications/
+          git diff --cached --quiet || git commit -m "Auto-update publications from ORCID and Google Scholar"
+          git push

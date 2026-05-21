@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -12,20 +12,22 @@ redirect_from:
   <p class="hero-tagline"><span id="typed-tagline"></span></p>
   <p class="hero-affiliation">
     <a href="https://www.genethon.fr" target="_blank">Genethon</a> &nbsp;·&nbsp; 
-    Integrare UMR_S951 &nbsp;·&nbsp; 
+    INSERM Integrare UMR_S951 &nbsp;·&nbsp; 
     University Paris-Saclay, France
   </p>
 </div>
 
 ---
 
-## About
+## About Me
 
-I am a permanent research scientist at [Genethon](https://www.genethon.fr), where I lead a multidisciplinary team at the intersection of **gene therapy**, **artificial intelligence**, and **computational biology**. My work focuses on the rational engineering of next-generation AAV viral vectors — designing capsids with enhanced tissue-targeting, improved safety, and real translational potential for rare diseases.
+I build the tools and pipelines to discover better gene therapy vectors — then use them to tackle the field's hardest problems.
 
-Beyond the bench, I build AI systems applied to virology: protein language models for capsid sequence generation and multi-property prediction, deep learning tools for high-content histological image analysis, and autonomous AI agents for laboratory workflow automation and scientific data analysis. This computational work has led to models deployed on Hugging Face and multiple patents in AI-guided capsid engineering.
+At [Genethon](https://www.genethon.fr), I lead a team at the intersection of **AAV capsid engineering**, **AI-driven design**, and **high-throughput biology**. Our fully in-house platform spans *in silico* library design, high-throughput cloning (up to 10¹⁵ diversity), functional screening, and preclinical validation — built to solve what others avoid: **comprehensive capsid optimization across targeting, manufacturing, and immunity simultaneously**. Six patents in under four years reflect both the novelty and the pace of what we build.
 
-Since establishing my independent research activity in 2022, my team's capsids are now in preclinical programs for Duchenne muscular dystrophy (DMD), limb-girdle muscular dystrophies (LGMDR3, LGMDR9), cardiac fibrosis, Brugada syndrome, and FSHD — with active licensing partnerships across France and the US. I serve as a peer reviewer for *Nature* (2025) and *Molecular Therapy* (2024), and have been invited to speak on AI-driven medicine at ESCP Paris, Genopole, and Évry-Sénart Sciences & Innovation.
+The translational results speak for themselves: since 2022, the team has grown from one to six and produced novel capsids now advancing in preclinical programs for DMD, LGMDs, DM1, FSHD, and cardiac diseases — with several under active licensing discussions in Europe and the US.
+
+I also develop the AI agents, bioinformatics pipelines, and research software that run the lab — because the shortest path from algorithm to patient requires computation and experimentation to be inseparable.
 
 ---
 
@@ -35,22 +37,32 @@ Since establishing my independent research activity in 2022, my team's capsids a
   <div class="focus-card">
     <div class="focus-icon">🧬</div>
     <h3>AAV Capsid Engineering</h3>
-    <p>Rational computational design of AAV variants targeting skeletal muscle, heart, and brain — for gene therapy of rare diseases.</p>
+    <p>Rational and AI-driven design of novel AAV variants optimized across three axes: tissue targeting (skeletal muscle — myofibers and stem cells, heart, and brain), manufacturing (production yield and purification), and immune evasion — powering gene therapy programs for DMD, LGMDs, DM1, FSHD, and cardiac diseases.</p>
+  </div>
+  <div class="focus-card">
+    <div class="focus-icon">🔬</div>
+    <h3>End-to-End Discovery Pipeline</h3>
+    <p>A fully in-house platform — from <em>in silico</em> library design and high-throughput cloning (up to 10¹⁵ diversity) to large-scale functional screening, AI-guided design iteration, and experimental validation in 2D/3D cell models, mouse (WT and disease), and NHP.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">🤖</div>
-    <h3>AI for Virology</h3>
-    <p>Protein language models and autonomous AI agents for AAV capsid design — from sequence generation to multi-property prediction and experimental workflow automation.</p>
+    <h3>AI for Gene Therapy & Lab Intelligence</h3>
+    <p>Building encoder and decoder language models for parvovirus capsid sequences to predict fitness, tropism, and yield. Developing and maintaining AI agents that automate discovery workflows, bioinformatics pipelines, and lab management.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">🛡️</div>
-    <h3>Immune Evasion</h3>
-    <p>Engineering AAV capsids and artificial IgG-degrading proteins to overcome pre-existing anti-AAV immunity and enable re-administration.</p>
+    <h3>Antibody Clearance</h3>
+    <p>Designing <em>de novo</em> IgG-degrading proteins — enabling safe AAV vector re-administration and opening new therapeutic avenues in IgG-mediated autoimmune diseases.</p>
+  </div>
+  <div class="focus-card">
+    <div class="focus-icon">⚙️</div>
+    <h3>Computational Tools & Software</h3>
+    <p>Developing bespoke research software: automated image quantification for muscle histology, transcriptomic analysis pipelines, a fiber-fiber mapping tool for single-fiber resolution augmentation, and language models for viral sequence analysis.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">💊</div>
     <h3>Translational Impact</h3>
-    <p>Bridging computation and experimentation — from in silico design to preclinical validation and industrial licensing.</p>
+    <p>Bridging computation and clinic — from <em>in silico</em> design to preclinical validation and industrial licensing, with active partnerships in Europe and the US.</p>
   </div>
 </div>
 
@@ -60,19 +72,19 @@ Since establishing my independent research activity in 2022, my team's capsids a
 
 <div class="stats-row" data-aos="fade-up">
   <div class="stat-item">
-    <span class="stat-number" data-countup="11">11</span>
-    <span class="stat-label">Publications</span>
-  </div>
-  <div class="stat-item">
     <span class="stat-number" data-countup="6">6</span>
     <span class="stat-label">Patents Filed</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number" data-countup="14">14</span>
+    <span class="stat-label">Publications</span>
   </div>
   <div class="stat-item">
     <span class="stat-number" data-countup="5" data-suffix="+">5+</span>
     <span class="stat-label">Industry Partners</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number" data-countup="5">5</span>
+    <span class="stat-number" data-countup="6">6</span>
     <span class="stat-label">Team Members</span>
   </div>
 </div>
@@ -82,6 +94,11 @@ Since establishing my independent research activity in 2022, my team's capsids a
 ## Selected Publications
 
 <div class="pub-list" data-aos="fade-up">
+  <div class="pub-item">
+    <span class="pub-badge">Preprint · 2026</span><br>
+    <strong>Suel, L.*, Petat, E.*, et al., Richard, I.†, Vu Hong, A.†</strong><br>
+    AI-designed AAV capsids deliver high-efficiency muscle gene transfer for low-dose therapy.
+  </div>
   <div class="pub-item pub-highlight">
     <span class="pub-badge">Nature Communications · 2024</span><br>
     <strong>Vu Hong, A.*†, Suel, L.*, Petat, E., et al., Richard, I.†</strong><br>
