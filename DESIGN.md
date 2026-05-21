@@ -1,49 +1,43 @@
 ---
 name: "Hong Ai Vu · Academic Portfolio"
-version: "1.0.0"
-theme: elegant-light
+version: "2.0.0"
+theme: cursor-adapted
 description: >
-  Warm ivory academic portfolio for a research scientist in gene therapy & AI.
-  Single light-mode only. Classical elegance through Cormorant Garamond
-  headings, Inter body text, and a cognac accent palette.
+  Cursor-adapted warm studio portfolio for a research scientist in gene therapy & AI.
+  Single light-mode only. Precise sophistication through EB Garamond headings,
+  Lato UI/body text, Cormorant Garamond hero-only, and an Onyx Orange accent palette.
 
 colors:
-  primary:      "#7C5C3E"   # cognac — accent, borders-on-hover, badges, section labels
-  primary-dark: "#4F3A27"   # 35% darkened — active states, strong hover
-  primary-darker: "#382A1C" # 55% darkened — deep emphasis
-  primary-light: "#B08D72"  # 55% lightened — subtle tints
-  primary-lighter: "#EEE4DA"# 85% lightened — background fills, chip backgrounds
-  background:   "#F5F0E8"   # warm ivory — page background, masthead
-  background-light: "#FAF7F2" # slightly lighter — card & code backgrounds
-  background-lighter: "#FFFFFF" # pure white — innermost content areas
-  text:         "#1A1714"   # deep charcoal — primary body text
-  text-muted:   "#5A5048"   # warm mid-gray — secondary text, captions, code
-  link:         "#5C3D24"   # dark cognac — inline links
-  link-dark:    "#491E0C"   # hovered links
-  link-visited: "#8C6A4E"   # visited links
-  border:       "#DDD3C4"   # default dividers and card borders
-  border-dark:  "#C8BEB2"   # stronger dividers
-  footer-bg:    "#2C221A"   # near-black warm — footer background
-  footer-text:  "#C8B8A8"   # warm light — footer body text
-  footer-text-hover: "#F5F0E8" # ivory — footer link hover
-  danger:       "#ee5f5b"
-  success:      "#62c462"
-  warning:      "#f89406"
+  canvas-parchment: "#f7f7f4"  # page background — warm studio white
+  pebble-gray:      "#e6e5e0"  # card/elevated surfaces — Pebble Gray
+  highlight-beige:  "#cdcdc9"  # borders, dividers — Highlight Beige
+  inkwell:          "#262510"  # primary text — near-black warm
+  muted-stone:      "#7a7974"  # secondary text, captions, labels — Muted Stone
+  onyx-orange:      "#f54e00"  # interactive accent — Onyx Orange
+  goldenrod:        "#c08532"  # warm secondary accent
+  forest-green:     "#34785c"  # success / HuggingFace links
+  footer-bg:        "#1a1a16"  # near-black cool — footer background
+  danger:           "#ee5f5b"
 
 typography:
-  heading:
+  hero:
     family: "'Cormorant Garamond', Georgia, serif"
-    weights: [400, 500, 600, 700]
+    weights: [600]
     styles: [normal, italic]
-    letter-spacing: "0.01em"
-    google-fonts-url: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+    usage: "Hero name (.hero-name) ONLY"
+  heading:
+    family: "'EB Garamond', Georgia, serif"
+    weights: [400, 500]
+    styles: [normal, italic]
+    letter-spacing: "-0.01em"
+    google-fonts-url: "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
   body:
-    family: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif"
-    weights: [300, 400, 500, 600, 700]
-    size-base: "15.5px"
-    line-height: 1.7
-    letter-spacing: "0.005em"
-    google-fonts-url: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    family: "'Lato', -apple-system, BlinkMacSystemFont, sans-serif"
+    weights: [400, 600]
+    size-base: "15px"
+    line-height: 1.65
+    letter-spacing: "0.01em"
+    google-fonts-url: "https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap"
   monospace:
     family: "Monaco, Consolas, 'Lucida Console', monospace"
   scale:
@@ -210,23 +204,24 @@ There is **no dark mode**. The site forces `data-theme="light"` on load. Do not 
 
 ### Palette rationale
 
-The palette is built from a single cognac seed (`#7C5C3E`) mixed against pure black and white at specific percentages to produce a coherent family.
+The palette is adapted from Cursor's warm studio design language — Canvas Parchment backgrounds, Pebble Gray elevated surfaces, and Onyx Orange as the single interactive accent. The palette is intentionally cooler and more precise than the previous cognac system.
 
 | Token | Value | Use |
 |---|---|---|
-| `primary` | `#7C5C3E` | Accent: badges, hover borders, section labels, stat numbers |
-| `primary-dark` | `#4F3A27` | Active / strong hover states |
-| `primary-lighter` | `#EEE4DA` | Chip fills, subtle backgrounds |
-| `background` | `#F5F0E8` | Page and masthead base — warm ivory |
-| `background-light` | `#FAF7F2` | Card interiors, code blocks |
-| `text` | `#1A1714` | All primary reading copy |
-| `text-muted` | `#5A5048` | Captions, meta, secondary labels |
-| `border` | `#DDD3C4` | Default dividers and card outlines |
-| `footer-bg` | `#2C221A` | Footer — dark warm near-black |
+| `canvas-parchment` | `#f7f7f4` | Page background — warm studio white |
+| `pebble-gray` | `#e6e5e0` | Card/elevated surfaces — Pebble Gray |
+| `highlight-beige` | `#cdcdc9` | Borders, dividers — Highlight Beige |
+| `inkwell` | `#262510` | Primary text — near-black warm |
+| `muted-stone` | `#7a7974` | Secondary text, captions, labels — Muted Stone |
+| `onyx-orange` | `#f54e00` | Interactive accent — Onyx Orange (links, hover, badges) |
+| `goldenrod` | `#c08532` | Warm secondary accent |
+| `forest-green` | `#34785c` | Success / HuggingFace links |
+| `footer-bg` | `#1a1a16` | Footer — near-black cool |
+| `danger` | `#ee5f5b` | Error states |
 
 ### Contrast note
 
-The `primary` cognac on `background` ivory yields approximately 3.2:1 — below WCAG AA for body text (4.5:1). **Never use `primary` as a color for paragraph-length text.** It is safe for large display text (≥ 18pt / ≥ 14pt bold), badges, labels, and decorative borders where AA large applies (3:1).
+The `onyx-orange` (#f54e00) on `canvas-parchment` (#f7f7f4) is a very high-contrast combination and should be used only for interactive affordances (links, hover states, badge outlines), never for paragraph-length text. Primary reading copy always uses `inkwell` (#262510) which provides strong contrast on parchment backgrounds.
 
 ---
 
