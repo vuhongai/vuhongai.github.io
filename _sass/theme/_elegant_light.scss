@@ -1,61 +1,93 @@
 /* ==========================================================================
-   ELEGANT THEME — warm ivory · cognac accent · single mode
+   CURSOR-ADAPTED THEME — warm studio precision
+   Palette: Canvas Parchment · Pebble Gray · Inkwell · Onyx Orange
    ========================================================================== */
 
-$primary-color              : #7C5C3E;
-$dark-primary-color         : mix(#000, $primary-color, 35%);
-$darker-primary-color       : mix(#000, $primary-color, 55%);
-$light-primary-color        : mix(#fff, $primary-color, 55%);
-$lighter-primary-color      : mix(#fff, $primary-color, 85%);
+/* ── Core palette ── */
+$canvas-parchment   : #f7f7f4;
+$pebble-gray        : #e6e5e0;
+$highlight-beige    : #cdcdc9;
+$inkwell            : #262510;
+$muted-stone        : #7a7974;
+$onyx-orange        : #f54e00;
+$goldenrod          : #c08532;
+$forest-green       : #34785c;
 
-$background                 : #F5F0E8;
-$background-light           : #FAF7F2;
-$background-lighter         : #FFFFFF;
-$text                       : #1A1714;
-$text-muted                 : #5A5048;
-$link                       : #5C3D24;
-$link-dark                  : mix(#000, $link, 20%);
-$link-light                 : mix(#fff, $link, 30%);
-$footer                     : #2C221A;
-$border                     : #DDD3C4;
-$border-dark                : #C8BEB2;
+/* ── Legacy SCSS variable mappings (required by theme system) ── */
+$primary-color              : $goldenrod;
+$dark-primary-color         : mix(#000, $goldenrod, 35%);
+$darker-primary-color       : mix(#000, $goldenrod, 55%);
+$light-primary-color        : mix(#fff, $goldenrod, 55%);
+$lighter-primary-color      : mix(#fff, $goldenrod, 85%);
 
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+$background                 : $canvas-parchment;
+$background-light           : $pebble-gray;
+$background-lighter         : #ffffff;
+$text                       : $inkwell;
+$text-muted                 : $muted-stone;
+$link                       : $onyx-orange;
+$link-dark                  : mix(#000, $onyx-orange, 20%);
+$link-light                 : mix(#fff, $onyx-orange, 30%);
+$footer                     : #1a1a16;
+$border                     : $highlight-beige;
+$border-dark                : $pebble-gray;
+
+$gray                       : $muted-stone;
+$dark-gray                  : mix(#000, $muted-stone, 40%);
+$darker-gray                : mix(#000, $muted-stone, 60%);
+$light-gray                 : mix(#fff, $muted-stone, 50%);
+$lighter-gray               : mix(#fff, $muted-stone, 90%);
 $danger-color               : #ee5f5b;
-$info-color                 : $primary-color;
-$notice-color               : $gray;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+$info-color                 : $goldenrod;
+$notice-color               : $muted-stone;
+$success-color              : $forest-green;
+$warning-color              : $goldenrod;
 $doc-font-size              : 16;
 
 $border-radius              : 4px;
-$box-shadow                 : 0 1px 3px rgba(0, 0, 0, 0.08);
+$box-shadow                 : rgba(0,0,0,0.14) 0px 28px 70px 0px, rgba(0,0,0,0.1) 0px 14px 32px 0px, rgba(38,37,16,0.1) 0px 0px 0px 1px;
 $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 68px;
 $navicon-width              : 28px;
-$navicon-height              : 3px;
+$navicon-height             : 3px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 :root {
-    --global-base-color                 : #{$primary-color};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$footer};
-    --global-border-color               : #{$border};
-    --global-dark-border-color          : #{$border-dark};
-    --global-code-background-color      : #{$background-light};
-    --global-code-text-color            : #{$text-muted};
-    --global-fig-caption-color          : #{$text-muted};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$dark-primary-color};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$primary-color};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$text-muted};
-    --global-thead-color                : #{$lighter-primary-color};
+  /* Legacy theme custom properties (used by existing layout files) */
+  --global-base-color                 : #{$onyx-orange};
+  --global-accent-warm                : #{$goldenrod};
+  --global-bg-color                   : #{$canvas-parchment};
+  --global-footer-bg-color            : #1a1a16;
+  --global-border-color               : #{$highlight-beige};
+  --global-dark-border-color          : #{$pebble-gray};
+  --global-code-background-color      : #{$pebble-gray};
+  --global-code-text-color            : #{$muted-stone};
+  --global-fig-caption-color          : #{$muted-stone};
+  --global-link-color                 : #{$onyx-orange};
+  --global-link-color-hover           : #{mix(#000, $onyx-orange, 20%)};
+  --global-link-color-visited         : #{$muted-stone};
+  --global-masthead-link-color        : #{$inkwell};
+  --global-masthead-link-color-hover  : #{$onyx-orange};
+  --global-text-color                 : #{$inkwell};
+  --global-text-color-light           : #{$muted-stone};
+  --global-thead-color                : #{$pebble-gray};
+
+  /* Cursor design tokens */
+  --color-canvas-parchment : #f7f7f4;
+  --color-pebble-gray      : #e6e5e0;
+  --color-highlight-beige  : #cdcdc9;
+  --color-inkwell          : #262510;
+  --color-muted-stone      : #7a7974;
+  --color-deep-shadow      : #141414;
+  --color-onyx-outline     : #f54e00;
+  --color-goldenrod        : #c08532;
+  --color-forest-green     : #34785c;
+
+  /* Shadow system */
+  --shadow-xl     : rgba(0, 0, 0, 0.14) 0px 28px 70px 0px,
+                    rgba(0, 0, 0, 0.1)  0px 14px 32px 0px,
+                    rgba(38, 37, 16, 0.1) 0px 0px 0px 1px;
+  --shadow-subtle : rgba(38, 37, 16, 0.1) 0px 0px 0px 1px,
+                    rgba(0, 0, 0, 0.28) 0px 18px 36px -18px;
 }
