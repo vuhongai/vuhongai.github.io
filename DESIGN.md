@@ -1,5 +1,5 @@
 ---
-name: "Hong Ai Vu · Academic Portfolio"
+name: "Ai Vu Hong · Academic Portfolio"
 version: "2.0.0"
 theme: cursor-adapted
 description: >
@@ -181,7 +181,7 @@ components:
     row-hover-bg: "var(--global-code-background-color)"
 ---
 
-# DESIGN.md — Hong Ai Vu Academic Portfolio
+# DESIGN.md — Ai Vu Hong Academic Portfolio
 
 > This file is the single source of truth for the site's visual identity.
 > Coding agents should read it before making any style, layout, or component change.
