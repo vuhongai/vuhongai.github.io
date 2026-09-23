@@ -8,12 +8,12 @@ redirect_from:
 ---
 
 <div class="hero-section" data-aos="fade-up">
-  <h1 class="hero-name">Hong Ai Vu <span class="hero-phd">Ph.D.</span></h1>
+  <h1 class="hero-name">Ai Vu Hong <span class="hero-phd">Ph.D.</span></h1>
   <p class="hero-tagline"><span id="typed-tagline"></span></p>
   <p class="hero-affiliation">
     <a href="https://www.genethon.fr" target="_blank">Genethon</a> &nbsp;·&nbsp; 
     INSERM Integrare UMR_S951 &nbsp;·&nbsp; 
-    University Paris-Saclay, France
+    Université Paris-Saclay, France
   </p>
 </div>
 
@@ -21,48 +21,52 @@ redirect_from:
 
 ## About Me
 
-I build the tools and pipelines to discover better gene therapy vectors — then use them to tackle the field's hardest problems.
+I am a permanent research scientist at [Genethon](https://www.genethon.fr), a non-profit gene therapy institute near Paris, where I lead my own research direction within the Progressive Muscular Dystrophies team.
 
-At [Genethon](https://www.genethon.fr), I lead a team at the intersection of **AAV capsid engineering**, **AI-driven design**, and **high-throughput biology**. Our fully in-house platform spans *in silico* library design, high-throughput cloning (up to 10¹⁵ diversity), functional screening, and preclinical validation — built to solve what others avoid: **comprehensive capsid optimization across targeting, manufacturing, and immunity simultaneously**. Six patents in under four years reflect both the novelty and the pace of what we build.
+My goal is simple to state and hard to achieve: **make gene therapy work better, more safely, and for more patients.** Gene therapy treats disease at its root by delivering a working copy of a gene into the body's cells. It has already changed lives — but it is still held back by three problems. The tiny delivery vehicles we use (engineered viruses called **AAV**) are not precise enough, so very high doses are needed and can cause serious side effects; many patients are shut out because their immune system blocks the treatment; and for progressive diseases, the benefit can fade over time.
 
-The translational results speak for themselves: since 2022, the team has grown from one to six and produced novel capsids now advancing in preclinical programs for DMD, LGMDs, DM1, FSHD, and cardiac diseases — with several under active licensing discussions in Europe and the US.
+I work at the meeting point of **biology, protein engineering, and artificial intelligence** to solve these problems. My team designs new delivery vehicles that reach the right tissue — muscle, heart, or brain — at much lower and safer doses, and we build the AI tools and laboratory pipelines that make this design process faster and more rational. In parallel, we create a new class of designer proteins that clear the harmful antibodies driving autoimmune disease and blocking gene therapy.
 
-I also develop the AI agents, bioinformatics pipelines, and research software that run the lab — because the shortest path from algorithm to patient requires computation and experimentation to be inseparable.
+The through-line of my career is turning a discovery about *how a disease works* into a *technology that can treat it* — and doing so in a way that is safe, affordable, and accessible.
+
+<p style="margin-top:1.5rem;">
+  <a href="/research/" style="font-family:'Lato',sans-serif;font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">→ Explore my research</a>
+</p>
 
 ---
 
-## Research Focus
+## What I Work On
 
 <div class="focus-grid" data-aos="fade-up" data-aos-delay="100">
   <div class="focus-card">
     <div class="focus-icon">🧬</div>
-    <h3>AAV Capsid Engineering</h3>
-    <p>Rational and AI-driven design of novel AAV variants optimized across three axes: tissue targeting (skeletal muscle — myofibers and stem cells, heart, and brain), manufacturing (production yield and purification), and immune evasion — powering gene therapy programs for DMD, LGMDs, DM1, FSHD, and cardiac diseases.</p>
-  </div>
-  <div class="focus-card">
-    <div class="focus-icon">🔬</div>
-    <h3>End-to-End Discovery Pipeline</h3>
-    <p>A fully in-house platform — from <em>in silico</em> library design and high-throughput cloning (up to 10¹⁵ diversity) to large-scale functional screening, AI-guided design iteration, and experimental validation in 2D/3D cell models, mouse (WT and disease), and NHP.</p>
+    <h3>Smarter Delivery Vehicles</h3>
+    <p>Designing next-generation AAV vectors — the "trucks" that carry a therapy into cells — so they reach muscle, heart, or brain precisely, at low and safer doses. Our engineered LICA vectors already work at doses roughly twenty times lower than those in current trials.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">🤖</div>
-    <h3>AI for Gene Therapy & Lab Intelligence</h3>
-    <p>Building encoder and decoder language models for parvovirus capsid sequences to predict fitness, tropism, and yield. Developing and maintaining AI agents that automate discovery workflows, bioinformatics pipelines, and lab management.</p>
+    <h3>AI for Gene Therapy</h3>
+    <p>Using machine learning — the same family of methods behind modern language models, applied to protein sequences — to predict and design vector properties instead of discovering them by trial and error.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">🛡️</div>
-    <h3>Antibody Clearance</h3>
-    <p>Designing <em>de novo</em> IgG-degrading proteins — enabling safe AAV vector re-administration and opening new therapeutic avenues in IgG-mediated autoimmune diseases.</p>
+    <h3>Clearing Harmful Antibodies</h3>
+    <p>Engineering designer proteins that remove disease-causing or therapy-blocking antibodies from the blood — opening gene therapy to more patients and offering a precise new approach to autoimmune diseases such as myasthenia gravis.</p>
+  </div>
+  <div class="focus-card">
+    <div class="focus-icon">🔬</div>
+    <h3>Understanding Disease</h3>
+    <p>Uncovering how muscle cells break down in muscular dystrophy — from energy metabolism to cellular recycling — to reveal new, treatable weak points in the disease.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">⚙️</div>
-    <h3>Computational Tools & Software</h3>
-    <p>Developing bespoke research software: automated image quantification for muscle histology, transcriptomic analysis pipelines, a fiber-fiber mapping tool for single-fiber resolution augmentation, and language models for viral sequence analysis.</p>
+    <h3>Building the Tools</h3>
+    <p>Developing the software, AI models, and automated pipelines that run modern discovery — from image analysis of muscle tissue to laboratory automation.</p>
   </div>
   <div class="focus-card">
     <div class="focus-icon">💊</div>
-    <h3>Translational Impact</h3>
-    <p>Bridging computation and clinic — from <em>in silico</em> design to preclinical validation and industrial licensing, with active partnerships in Europe and the US.</p>
+    <h3>From Bench to Bedside</h3>
+    <p>Moving discoveries toward the clinic through patents, preclinical programs, and partnerships with academic and industry teams in Europe and the US.</p>
   </div>
 </div>
 
@@ -72,20 +76,20 @@ I also develop the AI agents, bioinformatics pipelines, and research software th
 
 <div class="stats-row" data-aos="fade-up">
   <div class="stat-item">
-    <span class="stat-number" data-countup="6">6</span>
-    <span class="stat-label">Patents Filed</span>
+    <span class="stat-number" data-countup="7">7</span>
+    <span class="stat-label">Patent Families</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number" data-countup="14">14</span>
-    <span class="stat-label">Publications</span>
+    <span class="stat-number" data-countup="10">10</span>
+    <span class="stat-label">Peer-Reviewed Papers</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number" data-countup="5" data-suffix="+">5+</span>
-    <span class="stat-label">Industry Partners</span>
+    <span class="stat-number" data-countup="4">4</span>
+    <span class="stat-label">Grants as (Co-)PI</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number" data-countup="6">6</span>
-    <span class="stat-label">Team Members</span>
+    <span class="stat-number" data-countup="3">3</span>
+    <span class="stat-label">PhD Students Supervised</span>
   </div>
 </div>
 
@@ -94,17 +98,19 @@ I also develop the AI agents, bioinformatics pipelines, and research software th
 ## Selected Publications
 
 <div class="pub-list" data-aos="fade-up">
-  <div class="pub-item">
-    <span class="pub-badge">Preprint · 2026</span><br>
-    <strong>Suel, L.*, Petat, E.*, et al., Richard, I.†, Vu Hong, A.†</strong><br>
-    AI-designed AAV capsids deliver high-efficiency muscle gene transfer for low-dose therapy.
-  </div>
   <div class="pub-item pub-highlight">
     <span class="pub-badge">Nature Communications · 2024</span><br>
-    <strong>Vu Hong, A.*†, Suel, L.*, Petat, E., et al., Richard, I.†</strong><br>
+    <strong>Vu Hong, A.<sup>*†</sup>, Suel, L.<sup>*</sup>, Petat, E., et al., Richard, I.<sup>†</sup></strong><br>
     An engineered AAV targeting integrin αVβ6 presents improved myotropism across species.<br>
-    <em>Computational capsid design achieving record-low therapeutic dose (5×10¹² vg/kg) in two DMD mouse models and non-human primates.</em><br>
+    <em>Our first designer vector, LICA1 — reaching muscle at a record-low dose in two disease models and in non-human primates.</em><br>
     <a href="https://www.nature.com/articles/s41467-024-52002-4" target="_blank">→ Read paper</a>
+  </div>
+  <div class="pub-item">
+    <span class="pub-badge">Preprint · 2026 · under revision, Molecular Therapy</span><br>
+    <strong>Petat, E., Suel, L., et al., Richard, I.<sup>†</sup>, Vu Hong, A.<sup>†</sup></strong><br>
+    AI-designed AAV capsids deliver high-efficiency muscle gene transfer for low-dose therapy.<br>
+    <em>The next generation — LICA3 and LICA4 — designed with AI to hit muscle and heart at very low doses.</em><br>
+    <a href="https://doi.org/10.21203/rs.3.rs-9629847/v1" target="_blank">→ Read preprint</a>
   </div>
   <div class="pub-item">
     <span class="pub-badge">npj Regenerative Medicine · 2026</span><br>
@@ -114,13 +120,7 @@ I also develop the AI agents, bioinformatics pipelines, and research software th
   <div class="pub-item">
     <span class="pub-badge">Science Advances · 2025</span><br>
     <strong>Jaber, A., Palmieri, L., Bakour, R., Bourg, N., Vu Hong, A., et al.</strong><br>
-    Lysosomal damage is a therapeutic target in Duchenne muscular dystrophy. <em>Science Advances</em>, 11(43), eadv6805.
-  </div>
-  <div class="pub-item">
-    <span class="pub-badge">Int. J. Molecular Sciences · 2024</span><br>
-    <strong>Palmieri, L., Ferrand, M., Vu Hong, A., Richard, I., Albini, S.</strong><br>
-    In Silico Structural Prediction for the Generation of Novel Performant Midi-Dystrophins Based on Intein-Mediated Dual AAV Approach.<br>
-    <em>AlphaFold3-guided rational design of split-intein dystrophin constructs for dual AAV delivery in DMD.</em>
+    Lysosomal damage is a therapeutic target in Duchenne muscular dystrophy.
   </div>
   <div class="pub-item">
     <span class="pub-badge">Life Science Alliance · 2023</span><br>
@@ -129,60 +129,60 @@ I also develop the AI agents, bioinformatics pipelines, and research software th
   </div>
   <div class="pub-item">
     <span class="pub-badge">J. Cachexia, Sarcopenia & Muscle · 2021</span><br>
-    <strong>Amor, F.*, Vu Hong, A.*, et al.</strong><br>
+    <strong>Amor, F.<sup>*</sup>, Vu Hong, A.<sup>*</sup>, et al.</strong><br>
     Cholesterol metabolism is a potential therapeutic target in Duchenne muscular dystrophy.
   </div>
 </div>
+
+<p style="font-size:0.8rem;color:var(--color-muted-stone);"><sup>*</sup> equal contribution &nbsp;·&nbsp; <sup>†</sup> corresponding author</p>
 
 [→ Full publication list](/publications/)
 
 ---
 
-## Current Projects
+## Funding & Recognition
 
-- **Next-generation myotropic AAVs** (LICA1, LICA3, LICA5) — muscle & heart targeting capsids in active preclinical use at Genethon (DMD, LGMDR3, LGMDR9), RENOGENYX (FSHD, US), Ascidian Therapeutics (RNA gene therapy, US), Neocor Therapeutics (cardiac fibrosis, France), and Inserm UMRS_1166 (Brugada syndrome, France)
-- **AI models & autonomous agents** for AAV capsid proteins — protein language models for multi-property prediction (fitness, tropism, manufacturing yield) and agentic AI systems for laboratory workflow automation
-- **Multi-organ AAV capsids** — simultaneous targeting of skeletal muscle, heart, and brain for systemic diseases
-- **Antibody evasion strategies** — IgG-degrading capsid engineering and lysosome-targeting immunoglobulin degradation for seropositive patients unable to access gene therapy
-- **Muscle stem cell targeting** — enabling durable gene-editing strategies for muscular dystrophies
+I lead my own research program funded by competitive national and regional grants, and my work has been recognized by the leading gene and cell therapy societies.
 
----
-
-## Grants, Awards & Recognition
-
-| Year | Award / Grant |
-|------|---------------|
-| 2026 | Best Oral Presentation — AAV Vectors Workshop, SFTCG, France |
-| 2025 | DIM BioConvS Doctoral Grant (135 k€) — Next-generation AAV vectors for heart diseases |
-| 2023 | POC'UP Grant (100 k€) — Comprehensive AAV design by AI, SATT Paris-Saclay |
-| 2023 | Excellence in Research Award — ASGCT, USA |
-| 2023 | Meritorious Abstract Travel Award — ASGCT, USA |
-| 2023 | 3rd place, Cancer Immunotherapy Data Science Challenge — Broad Institute & Topcoder |
-| 2023 | Travel Award — European Society of Gene & Cell Therapy |
+| Year | Highlight |
+|------|-----------|
+| 2026 | **ANR JCJC grant** (321 k€) — young-investigator award to launch my independent project on dual-targeting AAV for Duchenne muscular dystrophy |
+| 2026 | **DIM BioConvS PhD grant** (135 k€) — precision antibody degradation in myasthenia gravis |
+| 2026 | Best Oral Presentation & Travel Award — French Society of Cell & Gene Therapy (SFTCG) |
+| 2025 | **DIM BioConvS PhD grant** (135 k€) — next-generation AAV vectors for heart diseases |
+| 2023 | **POC'UP grant** (100 k€) — comprehensive AAV design by AI, SATT Paris-Saclay |
+| 2023 | Excellence in Research Award — American Society of Gene & Cell Therapy (ASGCT) |
+| 2023 | Top-4 finishes, Cancer Immunotherapy Data Science Challenge — Broad Institute (MIT & Harvard) & Topcoder |
 | 2021 | Runner-up Award — World Muscle Society |
-| 2018 | Grant for Advanced Training in Bioinformatics — Fondagen |
-| 2016–2017 | International Scholarship IDEX Paris-Saclay — University Paris-Saclay |
-| 2015 | International Summer Research Academy Scholarship — Vanderbilt University Medical Center |
-| 2012 | 1st in National University Entrance Exam — Vietnam |
-| 2011–2012 | Third prizes in National Mathematical Olympiad — Vietnam |
+
+[→ Full CV](/cv/)
 
 ---
 
 ## AI Models & Software
 
+I develop and openly share tools that support gene therapy research.
+
 <div class="software-list" data-aos="fade-up">
   <div class="software-item">
-    <strong>AAVesm2_650M_800_v1</strong> — ESM2-650M encoder fine-tuned on parvovirus capsid sequences; generates protein embeddings for downstream AAV property prediction<br>
+    <strong>AAVesm2 — a protein "reader" for AAV</strong> — a language model that reads AAV capsid sequences and turns them into numerical fingerprints, used to predict how a given vector will behave.<br>
     <a href="https://huggingface.co/avuhong/AAVesm2_650M_800_v1" target="_blank">🤗 avuhong/AAVesm2_650M_800_v1</a>
   </div>
   <div class="software-item">
-    <strong>ParvoGPT2</strong> — GPT-2 decoder fine-tuned from ProtGPT2 on parvovirus capsid sequences; enables realistic de novo generation of AAV capsid protein sequences<br>
-    <a href="https://huggingface.co/avuhong/ParvoGPT2" target="_blank">🤗 avuhong/ParvoGPT2</a>
+    <strong>PiccoviralesGPT — a protein "writer" for AAV</strong> — a generative model that proposes new, realistic capsid sequences, expanding the space of candidate vectors to test.<br>
+    <a href="https://huggingface.co/avuhong/PiccoviralesGPT" target="_blank">🤗 avuhong/PiccoviralesGPT</a>
   </div>
   <div class="software-item">
-    <strong>AI laboratory agents</strong> — Autonomous agentic systems for scientific workflow automation and data-driven research support in AAV gene therapy
+    <strong>F2FMatcher</strong> — an AI tool that tracks the same individual muscle fibers across different tissue sections, enabling far richer analysis of muscle biopsies.<br>
+    <a href="https://github.com/vuhongai/F2FMatcher" target="_blank"> vuhongai/F2FMatcher</a>
   </div>
   <div class="software-item">
-    <strong>Fiber-to-fiber mapping</strong> — Deep learning method for accurate myofiber tracking across transversal histology sections, enabling multi-dimensional single-fiber profiling <em>(patent in preparation)</em>
+    <strong>AI laboratory agents</strong> — automated assistants that streamline analysis and day-to-day workflows in the lab.
   </div>
 </div>
+
+---
+
+<p style="text-align:center;font-family:'EB Garamond',serif;font-style:italic;color:var(--color-muted-stone);font-size:1.05rem;">
+  Interested in collaborating, licensing, or joining the team? <a href="mailto:avuhong@genethon.fr">Get in touch →</a>
+</p>
