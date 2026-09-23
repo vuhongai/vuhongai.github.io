@@ -18,6 +18,13 @@
         once: true,
         offset: 60
       });
+    } else {
+      // Safety net: if the AOS script fails to load, aos.css may still have
+      // hidden these elements. Reveal them so content is never invisible.
+      document.querySelectorAll('[data-aos]').forEach(function (el) {
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+      });
     }
 
     // ── Typed.js ─────────────────────────────────────────────────────────

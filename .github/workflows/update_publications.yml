@@ -1,9 +1,16 @@
 name: Update Publications
 
 on:
-  schedule:
-    - cron: '0 6 * * 1'   # every Monday at 06:00 UTC
-  workflow_dispatch:        # allow manual trigger from GitHub Actions UI
+  # NOTE: the weekly schedule is intentionally disabled. The ORCID/Scholar
+  # scraper pulled in conference abstracts, podcast episodes, author
+  # corrections and duplicates with empty citations, which broke the
+  # Publications page. _publications/ is now a hand-curated collection
+  # (each file marked "# curated" so the script cannot overwrite it).
+  # Re-enable the cron only after the script filters non-article work types.
+  #
+  # schedule:
+  #   - cron: '0 6 * * 1'   # every Monday at 06:00 UTC
+  workflow_dispatch:        # manual trigger only, from the Actions UI
 
 jobs:
   update:

@@ -1,55 +1,100 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
+hide_page_title: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my works on <a href="{{site.author.googlescholar}}">my Google Scholar</a>.</div>
-{% endif %}
 
 {% include base_path %}
 
-<style>
-  .pub-list {
-    list-style: none;
-    counter-reset: pub-counter;
-    padding: 0;
-  }
-  .pub-list li {
-    counter-increment: pub-counter;
-    display: flex;
-    gap: 0.6em;
-    margin-bottom: 0.8em;
-    line-height: 1.5;
-  }
-  .pub-list li::before {
-    content: counter(pub-counter) ".";
-    min-width: 2em;
-    text-align: right;
-    flex-shrink: 0;
-    color: inherit;
-  }
-  .pub-list a {
-    color: inherit;
-    text-decoration: none;
-  }
-  .pub-list a:hover {
-    text-decoration: underline;
-  }
-</style>
-
 {% assign all_pubs = site.publications | sort: "date" | reverse %}
+{% assign journals = all_pubs | where: "pubkind", "journal" %}
+{% assign preprints = all_pubs | where_exp: "p", "p.pubkind != 'journal'" %}
 
-<ol class="pub-list">
-  {% for post in all_pubs %}
-    <li>
-      {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" target="_blank">{{ post.citation }}</a>
-      {% else %}
-        {{ post.citation }}
-      {% endif %}
-    </li>
-  {% endfor %}
-</ol>
+<div class="hero-section" data-aos="fade-up" style="padding-bottom:0.5rem;">
+  <h1 class="hero-name" style="font-size:2.4rem;">Publications</h1>
+  <p class="hero-affiliation">
+    Peer-reviewed research in gene therapy, AAV engineering, and muscle disease biology.
+  </p>
+</div>
+
+<div class="stats-row" data-aos="fade-up" style="margin-top:1.2rem;">
+  <div class="stat-item">
+    <span class="stat-number">{{ journals | size }}</span>
+    <span class="stat-label">Peer-Reviewed</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">{{ preprints | size }}</span>
+    <span class="stat-label">Preprints / In Press</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">5</span>
+    <span class="stat-label">First / Corresponding</span>
+  </div>
+</div>
+
+<p style="font-size:0.85rem;color:var(--color-muted-stone);">
+  <sup>*</sup> equal contribution &nbsp;·&nbsp; <sup>#</sup> corresponding author &nbsp;·&nbsp;
+  Full record on <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a>
+  and <a href="{{ site.author.orcid }}" target="_blank">ORCID</a>.
+</p>
+
+<h2>Peer-Reviewed Articles</h2>
+
+{% assign current_year = "" %}
+{% for post in journals %}
+  {% assign year = post.date | date: "%Y" %}
+  {% if year != current_year %}
+    {% unless forloop.first %}</div>{% endunless %}
+    <h3 class="pub-year">{{ year }}</h3>
+    <div class="pub-list">
+    {% assign current_year = year %}
+  {% endif %}
+
+  <div class="pub-item{% if post.featured %} pub-highlight{% endif %}">
+    <span class="pub-badge">{{ post.venue }}</span>
+    {% if post.role == 'corresponding' %}<span class="pub-role">Corresponding author</span>
+    {% elsif post.role == 'first' %}<span class="pub-role">First author</span>{% endif %}
+    <div class="pub-title">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
+      {% else %}{{ post.title }}{% endif %}
+    </div>
+    <div class="pub-authors">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+    <div class="pub-meta">
+      <em>{{ post.venue }}</em>{% if post.vol %}, {{ post.vol }}{% endif %}
+      {% if post.doi %} &nbsp;·&nbsp; <a href="https://doi.org/{{ post.doi }}" target="_blank">doi:{{ post.doi }}</a>{% endif %}
+    </div>
+    <p class="pub-summary">{{ post.excerpt }}</p>
+  </div>
+{% endfor %}
+</div>
+
+<h2>Preprints &amp; Manuscripts</h2>
+
+<div class="pub-list">
+{% for post in preprints %}
+  <div class="pub-item">
+    <span class="pub-badge">{{ post.date | date: "%Y" }} · {{ post.venue }}</span>
+    {% if post.role == 'corresponding' %}<span class="pub-role">Corresponding author</span>{% endif %}
+    <div class="pub-title">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
+      {% else %}{{ post.title }}{% endif %}
+    </div>
+    <div class="pub-authors">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+    {% if post.doi %}<div class="pub-meta"><a href="https://doi.org/{{ post.doi }}" target="_blank">doi:{{ post.doi }}</a></div>{% endif %}
+    <p class="pub-summary">{{ post.excerpt }}</p>
+  </div>
+{% endfor %}
+</div>
+
+<h2>Thesis</h2>
+
+<div class="pub-list">
+  <div class="pub-item">
+    <span class="pub-badge">Doctoral Thesis · 2021</span>
+    <div class="pub-title">Novel pathological mechanisms support new therapeutic opportunities in Duchenne muscular dystrophy</div>
+    <div class="pub-authors"><strong>Vu Hong, A.</strong></div>
+    <div class="pub-meta"><em>Université Paris-Saclay</em>, NNT 2021UPASL036 &nbsp;·&nbsp; <a href="https://theses.hal.science/tel-03485606" target="_blank">HAL: tel-03485606</a></div>
+  </div>
+</div>

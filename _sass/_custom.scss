@@ -161,8 +161,13 @@ h1, h2, h3, h4, h5, h6,
 
 /* ── Hero section ─────────────────────────────────────────────────────────── */
 .hero-section {
-  padding: 2.5rem 0 2rem;
-  margin-bottom: 0.5rem;
+  padding: 1.5rem 0 0.75rem;
+  margin-bottom: 0;
+
+  /* The divider right after the hero doesn't need the full content rhythm. */
+  + hr {
+    margin-top: 1.25rem !important;
+  }
 }
 
 .hero-name {
@@ -670,4 +675,151 @@ h1, h2, h3, h4, h5, h6,
     font-size: 1.02rem;
     font-weight: 600;
   }
+}
+
+/* ── Publications page ────────────────────────────────────────────────────── */
+.pub-year {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: 1.6rem !important;
+  font-weight: 600;
+  color: var(--color-inkwell) !important;
+  margin: 2rem 0 0.8rem !important;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--color-highlight-beige);
+  letter-spacing: -0.02em;
+}
+
+.pub-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-inkwell);
+  margin: 0.45rem 0 0.35rem;
+
+  a {
+    color: var(--color-inkwell);
+    border-bottom: none;
+    font-weight: 500;
+
+    &:hover {
+      color: var(--color-onyx-outline);
+      border-bottom: none;
+    }
+  }
+}
+
+.pub-authors {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.83rem;
+  line-height: 1.6;
+  color: var(--color-muted-stone);
+  margin-bottom: 0.3rem;
+
+  strong {
+    color: var(--color-inkwell);
+    font-weight: 700;
+  }
+}
+
+.pub-meta {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.78rem;
+  color: var(--color-muted-stone);
+  margin-bottom: 0.45rem;
+
+  a {
+    color: var(--color-muted-stone);
+    border-bottom: none;
+
+    &:hover { color: var(--color-onyx-outline); }
+  }
+}
+
+.pub-summary {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 0.85rem !important;
+  line-height: 1.65 !important;
+  color: var(--color-muted-stone) !important;
+  margin: 0.4rem 0 0 !important;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-highlight-beige);
+}
+
+.pub-role {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-forest-green, #4a6b4a);
+  background: rgba(74, 107, 74, 0.09);
+  border-radius: 2px;
+  padding: 0.2em 0.55em;
+  margin-left: 0.4em;
+  vertical-align: middle;
+}
+
+/* ── Awards / achievements page ───────────────────────────────────────────── */
+.award-group {
+  margin: 1.2rem 0 2rem;
+}
+
+.award-item {
+  display: flex;
+  gap: 1.1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--color-highlight-beige);
+
+  &:first-child { border-top: 1px solid var(--color-highlight-beige); }
+}
+
+.award-year {
+  flex-shrink: 0;
+  width: 5.2rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-onyx-outline);
+  line-height: 1.4;
+}
+
+.award-body {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.89rem;
+  line-height: 1.6;
+  color: var(--color-inkwell);
+
+  strong {
+    font-weight: 700;
+    color: var(--color-inkwell);
+  }
+
+  span.award-note {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-muted-stone);
+    margin-top: 0.15rem;
+  }
+}
+
+.award-amount {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-onyx-outline);
+  border: 1px solid var(--color-onyx-outline);
+  border-radius: 2px;
+  padding: 0.15em 0.5em;
+  margin-left: 0.45em;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .award-item { flex-direction: column; gap: 0.2rem; }
+  .award-year { width: auto; font-size: 1rem; }
 }

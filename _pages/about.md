@@ -2,6 +2,7 @@
 permalink: /
 title: "About Me"
 author_profile: true
+hide_page_title: true
 redirect_from: 
   - /about/
   - /about.html
@@ -9,7 +10,7 @@ redirect_from:
 
 <div class="hero-section" data-aos="fade-up">
   <h1 class="hero-name">Ai Vu Hong <span class="hero-phd">Ph.D.</span></h1>
-  <p class="hero-tagline"><span id="typed-tagline"></span></p>
+  <p class="hero-tagline"><span id="typed-tagline">Designing safer, smarter gene therapies for rare diseases</span></p>
   <p class="hero-affiliation">
     <a href="https://www.genethon.fr" target="_blank">Genethon</a> &nbsp;·&nbsp; 
     INSERM Integrare UMR_S951 &nbsp;·&nbsp; 
