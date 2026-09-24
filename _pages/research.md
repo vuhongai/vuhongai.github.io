@@ -8,7 +8,7 @@ hide_page_title: true
 
 <div class="hero-section" data-aos="fade-up" style="padding-bottom:0.5rem;">
   <h1 class="hero-name" style="font-size:2.4rem;">Research</h1>
-  <p class="hero-affiliation">Predictive engineering of gene-therapy vectors and the immune barriers that limit them.</p>
+  <p class="hero-affiliation">Predictive engineering of gene-therapy vectors and the therapeutic proteins.</p>
 </div>
 
 My independent research program at Genethon operates at the interface of **protein engineering, artificial intelligence, and translational gene therapy**. It is organised along two complementary lines that share a common foundation in computational protein design:
