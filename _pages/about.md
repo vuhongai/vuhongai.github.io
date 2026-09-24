@@ -32,7 +32,7 @@ I am a permanent research scientist at [Genethon](https://www.genethon.fr), a no
 
 <div class="focus-grid" data-aos="fade-up" data-aos-delay="100">
   <div class="focus-card">
-    <div class="focus-icon"></div>
+    <div class="focus-icon">🤖</div>
     <h3>Smarter Delivery Vehicles</h3>
     <p>Designing next-generation AAV vectors reaching target tissues precisely.</p>
   </div>
