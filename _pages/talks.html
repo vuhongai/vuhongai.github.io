@@ -1,16 +1,115 @@
 ---
-layout: archive
-title: "Talks and presentations"
+layout: single
+title: "Talks"
 permalink: /talks/
 author_profile: true
+hide_page_title: true
 ---
 
-{% if site.talkmap_link == true %}
+<style>
+  .talk-list { list-style: none; margin: 0 0 2rem 0; padding: 0; }
+  .talk-list li {
+    display: flex;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--color-onyx-outline, #e5e2db);
+  }
+  .talk-list li:last-child { border-bottom: none; }
+  .talk-year {
+    flex: 0 0 3.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: var(--color-muted-stone, #8a857c);
+  }
+  .talk-main .talk-title { font-weight: 600; }
+  .talk-main .talk-venue {
+    font-size: 0.9rem;
+    color: var(--color-muted-stone, #8a857c);
+    margin-top: 0.15rem;
+  }
+</style>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<div class="hero-section" data-aos="fade-up" style="padding-bottom:0.5rem;">
+  <h1 class="hero-name" style="font-size:2.4rem;">Talks &amp; Presentations</h1>
+  <p class="hero-affiliation">Selected invited and oral presentations.</p>
+</div>
 
-{% endif %}
+## Invited presentations
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<ul class="talk-list">
+  <li>
+    <span class="talk-year">2025</span>
+    <div class="talk-main">
+      <div class="talk-title">AI-based design of gene therapy vectors for genetic diseases</div>
+      <div class="talk-venue">Stratégies numériques et intelligence artificielle pour la santé, École supérieure de commerce de Paris — Paris, France</div>
+    </div>
+  </li>
+  <li>
+    <span class="talk-year">2025</span>
+    <div class="talk-main">
+      <div class="talk-title">AI-based design of gene therapy vectors for muscle diseases</div>
+      <div class="talk-venue">IA &amp; Santé : quelles synergies sur le territoire ?, Évry-Sénart Sciences et Innovation — Évry, France</div>
+    </div>
+  </li>
+  <li>
+    <span class="talk-year">2024</span>
+    <div class="talk-main">
+      <div class="talk-title">Optimizing AAV capsid via computational design for improved muscular dystrophy gene therapy</div>
+      <div class="talk-venue">Optimiser les thérapies innovantes : ciblage thérapeutique et stratégies combinatoires, Genopole — Évry, France</div>
+    </div>
+  </li>
+  <li>
+    <span class="talk-year">2023</span>
+    <div class="talk-main">
+      <div class="talk-title">An integrin-targeting AAV developed by a novel computational rational design methodology presents improved targeting to skeletal muscle and reduced tropism to the liver</div>
+      <div class="talk-venue">Centre de Recherche en Myologie, UMR-S 974 — Paris, France</div>
+    </div>
+  </li>
+  <li>
+    <span class="talk-year">2023</span>
+    <div class="talk-main">
+      <div class="talk-title">An integrin-targeting AAV developed by a novel computational rational design methodology presents improved targeting to skeletal muscle and reduced tropism to the liver</div>
+      <div class="talk-venue">Institut de Génétique et de Biologie Moléculaire et Cellulaire (IGBMC) — Strasbourg, France</div>
+    </div>
+  </li>
+</ul>
+
+## Oral presentations
+
+<ul class="talk-list">
+  <li>
+    <span class="talk-year">2026</span>
+    <div class="talk-main">
+      <div class="talk-title">AI-designed AAV capsid delivers high-efficiency muscle gene transfer for low-dose therapy</div>
+      <div class="talk-venue">AAV Vectors Workshop, Société Française de Thérapie Cellulaire et Génique (SFTCG) — France</div>
+    </div>
+  </li>
+  <li>
+    <span class="talk-year">2024</span>
+    <div class="talk-main">
+      <div class="talk-title">An engineered AAV targeting integrin αVβ6 presents improved myotropism across species</div>
+      <div class="talk-venue">American Society of Gene &amp; Cell Therapy (ASGCT) Annual Meeting — United States</div>
+    </div>
+  </li>
+  <li>
+    <span class="talk-year">2023</span>
+    <div class="talk-main">
+      <div class="talk-title">An integrin-targeting AAV presents improved targeting to skeletal muscle and reduced tropism to the liver</div>
+      <div class="talk-venue">European Society of Gene &amp; Cell Therapy (ESGCT) Annual Meeting — Belgium</div>
+    </div>
+  </li>
+  <li>
+    <span class="talk-year">2023</span>
+    <div class="talk-main">
+      <div class="talk-title">An integrin-targeting AAV presents improved targeting to skeletal muscle and reduced tropism to the liver</div>
+      <div class="talk-venue">American Society of Gene &amp; Cell Therapy (ASGCT) Annual Meeting — United States</div>
+    </div>
+  </li>
+  <li>
+    <span class="talk-year">2020</span>
+    <div class="talk-main">
+      <div class="talk-title">The DLK1-DIO3 cluster miRNAs regulate mitochondrial functions in the dystrophic muscle in DMD</div>
+      <div class="talk-venue">Padua Muscle Days — Padua, Italy</div>
+    </div>
+  </li>
+</ul>

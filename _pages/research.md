@@ -8,120 +8,106 @@ hide_page_title: true
 
 <div class="hero-section" data-aos="fade-up" style="padding-bottom:0.5rem;">
   <h1 class="hero-name" style="font-size:2.4rem;">Research</h1>
-  <p class="hero-affiliation">Turning disease biology into safer, smarter treatments.</p>
+  <p class="hero-affiliation">Predictive engineering of gene-therapy vectors and the immune barriers that limit them.</p>
 </div>
 
-Gene therapy can, in principle, correct a disease at its source. In practice, three obstacles still stand in the way: our delivery vehicles are not precise enough, the immune system often blocks the treatment, and we still don't fully understand why some diseases resist it.
+My independent research program at Genethon operates at the interface of **protein engineering, artificial intelligence, and translational gene therapy**. It is organised along two complementary lines that share a common foundation in computational protein design:
 
-My research attacks all three. I combine **disease biology, protein engineering, and artificial intelligence** into a single pipeline that runs from understanding a disease to building a therapy for it — and I lead this programme as an independent investigator at Genethon, supported by competitive national funding and protected by seven patent families.
+1. **AAV capsid engineering** — transforming vector development from empirical selection into a predictive, multi-parameter engineering discipline.
+2. **Targeted protein degradation** — a host-directed strategy that removes the antibodies which block gene therapy and drive autoimmune disease.
 
-<div class="stats-row" data-aos="fade-up">
-  <div class="stat-item">
-    <span class="stat-number" data-countup="20" data-suffix="×">20×</span>
-    <span class="stat-label">Lower Therapeutic Dose</span>
-  </div>
-  <div class="stat-item">
-    <span class="stat-number" data-countup="3">3</span>
-    <span class="stat-label">Target Organs</span>
-  </div>
-  <div class="stat-item">
-    <span class="stat-number" data-countup="8">8</span>
-    <span class="stat-label">Active Collaborations</span>
-  </div>
-  <div class="stat-item">
-    <span class="stat-number" data-countup="7">7</span>
-    <span class="stat-label">Patent Families</span>
-  </div>
-</div>
+Capsid engineering acts on the vector; protein degradation acts on the host environment. Pursued together, they address both sides of the central obstacle to systemic gene therapy — reaching the right cells, and evading the immune system that opposes delivery.
 
 ---
 
-## Three Connected Themes
+## AAV capsid engineering
 
-<div class="focus-grid" data-aos="fade-up" data-aos-delay="100" style="grid-template-columns:1fr;gap:14px;margin-top:1.5rem;">
+Capsid engineering has historically relied on three strategies, each with intrinsic limits. **Directed evolution** explores large libraries but selects along a single functional axis, systematically eliminating variants with balanced advantages and optimising efficacy without safety. **Rational design** introduces defined receptor interactions under structural constraints — as in our LICA1/3/4 vectors — but samples only a narrow region of sequence space. **Machine learning** offers predictive design but is limited by datasets that diversify a single capsid region. These converge on a common gap: no framework combines simultaneous diversification of multiple variable regions, parallel measurement of multiple functional properties, and computational integration of the two.
 
-  <a href="/research/gene-therapy-vectors/" class="focus-card" style="display:block;">
-    <div class="focus-icon">🧬</div>
-    <h3>Engineering Better Gene-Therapy Vectors</h3>
-    <p>Designing AAV vectors — the microscopic vehicles that carry a therapy into cells — that reach muscle, heart, and brain precisely, at low and safer doses. This is where biology meets AI, and it is the core of my independent programme: the LICA platform.</p>
-    <p style="margin-top:0.6rem !important;color:var(--color-onyx-outline) !important;font-weight:600;">Read more →</p>
-  </a>
+My program is built on an integrated platform that closes this gap (Patent PCT/EP2024/082609).
 
-  <a href="/research/antibody-degradation/" class="focus-card" style="display:block;">
-    <div class="focus-icon">🛡️</div>
-    <h3>Clearing Harmful Antibodies</h3>
-    <p>Building a new class of designer proteins that remove specific antibodies from the blood — those that block gene therapy, and those that drive autoimmune diseases such as myasthenia gravis.</p>
-    <p style="margin-top:0.6rem !important;color:var(--color-onyx-outline) !important;font-weight:600;">Read more →</p>
-  </a>
+### A predictive, multi-parameter engineering platform
 
-  <a href="/research/disease-mechanisms/" class="focus-card" style="display:block;">
-    <div class="focus-icon">🔬</div>
-    <h3>Understanding How Muscle Diseases Work</h3>
-    <p>The foundation of my work: discovering how the biology of muscle cells goes wrong in muscular dystrophy — in their energy factories and recycling systems — and how those discoveries point to new treatments.</p>
-    <p style="margin-top:0.6rem !important;color:var(--color-onyx-outline) !important;font-weight:600;">Read more →</p>
-  </a>
+**Rationale.** Many clinically decisive vector properties — receptor engagement, neutralising-antibody escape, manufacturability — are governed by the combined topology of several surface loops, and cannot be captured by diversifying one variable region at a time.
 
-</div>
+**Objective.** To jointly optimise tissue targeting, manufacturability, and immune evasion by (i) simultaneously diversifying multiple capsid variable regions (VRs) within one backbone while preserving VR–barcode linkage, (ii) profiling millions of barcoded variants in parallel — measuring vector delivery (DNA) and productive expression (RNA), production yield, affinity-purification compatibility, tissue tropism, and antibody escape as independent variables, and (iii) training interpretable deep-learning models that generalise these sequence–function relationships, including inter-VR epistasis, into unexplored sequence space. An AI-optimised LICA1 library already raised the proportion of viable capsids above 75%, providing the high-quality datasets that power the disease-adapted programs below.
 
----
+### Disease-adapted LICA vectors: coordinated muscle–heart delivery
 
-## How We Work
+**Rationale.** Many neuromuscular and cardiac disorders — Duchenne muscular dystrophy (in which cardiomyopathy is now a leading cause of death), sarcoglycanopathies, laminopathies, Emery-Dreifuss dystrophy — require coordinated correction of both skeletal and cardiac muscle. The goal is not maximal transduction of one tissue, but tuning the cardiac-to-skeletal delivery ratio to disease anatomy. Our LICA3/4 vectors established that this coordinated optimisation is feasible.
 
-Most gene-therapy vectors have been found by trial and error: make millions of random variants and fish out the rare ones that work. That is slow, hard to interpret, and improves only one property at a time. We replaced it with a closed design loop, in which every round of experiments teaches the next round of design.
+**Objective.** To identify the capsid sequence features that control cardiac-to-skeletal partitioning and to optimise this ratio predictively — using in silico evolution driven by our screening-trained models as fitness oracles, then validating candidates across human iPSC-derived cardiomyocytes and myotubes, mouse models, and non-human primates. *Supported by the ENGAGE-Heart doctoral project (DIM BioConvS, 2025–2028).*
 
-<div class="pipeline-steps" data-aos="fade-up">
-  <div class="pipeline-step">
-    <div class="step-num">1</div>
-    <div class="step-body"><strong>Design.</strong> Structural modelling and protein-AI models propose candidate vectors on purpose, rather than at random — each one a deliberate hypothesis.</div>
-  </div>
-  <div class="pipeline-step">
-    <div class="step-num">2</div>
-    <div class="step-body"><strong>Build.</strong> An in-house pipeline assembles very large, precisely controlled libraries of candidates, diversified at several points on the vector surface at once.</div>
-  </div>
-  <div class="pipeline-step">
-    <div class="step-num">3</div>
-    <div class="step-body"><strong>Test.</strong> Each candidate carries a unique molecular "barcode", so millions can be measured together in a single experiment — not just for how well they work, but also for how well they can be manufactured and how well they evade the immune system.</div>
-  </div>
-  <div class="pipeline-step">
-    <div class="step-num">4</div>
-    <div class="step-body"><strong>Learn.</strong> The results train models that predict vector behaviour, which then design the next generation — and, just as importantly, explain <em>why</em> a given design works.</div>
-  </div>
-</div>
+### Durable gene editing: dual myofiber–muscle stem cell targeting
 
-This loop is what lets us optimise several properties at once — targeting, safety, and manufacturability — instead of trading one against another.
+**Rationale.** Current AAV vectors transduce post-mitotic myofibers efficiently but reach muscle stem cells (MuSCs) poorly. If MuSCs remain uncorrected, regenerated fibers carry the original defect and therapeutic benefit erodes under the chronic degeneration–regeneration seen in DMD, sarcoglycanopathies, and dysferlinopathies. Our data suggest LICA capsids can access the MuSC compartment, possibly via αVβ1.
+
+**Objective.** To engineer a dual-tropism capsid — combined with a promoter active in both quiescent MuSCs and mature myofibers — that enables durable single-AAV gene editing sustained across repeated regenerative cycles. *Core of the AAV-SkEdit project (ANR JCJC, 2026–2029).*
+
+### Brain-targeted delivery via the transferrin receptor
+
+**Rationale.** The blood–brain barrier (BBB) severely limits CNS gene therapy: natural serotypes such as AAV9 cross poorly, forcing high systemic doses and peripheral toxicity. The most advanced engineered solution, BI-hTFR1, binds only human TfR1 and shows no activity in wild-type mice, so its preclinical evaluation depends entirely on humanised knock-in animals.
+
+**Objective.** To engineer AAV9 capsids, co-diversified at VR4 and VR8, that engage transferrin receptor 1 (TfR1) **across human and mouse** for receptor-mediated BBB transcytosis — enabling direct validation in the existing repertoire of neurological disease models (Alzheimer's disease, myotonic dystrophy type 1, Pompe disease) while retaining human-relevant receptor interactions. *In collaboration with Prof. Hervé Le Stunff (Université Paris-Saclay, CNRS UMR 9197).*
+
+### Decoding the full capsid sequence–function landscape
+
+**Rationale.** The programs above each diversify only two of the ten capsid variable regions. The rules connecting the complete capsid surface to the full spectrum of vector properties remain largely unknown — the most consequential barrier to turning AAV engineering into a predictive science.
+
+**Objective.** To decode, then design. Using a library diversified across all ten VRs (already built and pre-enriched), profile it across manufacturability, cross-species tropism, intracellular trafficking, and immunogenicity, and interpret it with deep learning to produce residue-, VR-, and epistasis-level maps of functional determinants. These principles will then drive the rational design of universal, manufacturable, immune-evasive vectors for muscle, liver, and brain — a closed-loop *design–build–test–learn* framework transferable to other vectors and protein-engineering problems.
 
 ---
 
-## What It Has Produced
+## Targeted protein degradation
 
-- **LICA1** — the first rationally designed, receptor-guided myotropic vector. Efficient muscle delivery with strong liver detargeting, validated from mice to non-human primates, and therapeutic at roughly **twenty times below** the doses used in current clinical trials. *(Nature Communications, 2024)*
-- **LICA3 / LICA4** — the AI-designed second generation, reaching both skeletal muscle and heart while remaining easy to manufacture. *(Preprint 2026, under revision at Molecular Therapy)*
-- **A multi-parameter design platform** — barcoded, multi-region vector libraries combined with interpretable deep learning, protected by patent and transferable to other vectors and other diseases.
-- **IgG degraders** — designer proteins that clear therapy-blocking antibodies, opening treatment to patients who are currently excluded.
-- **Two disease mechanisms in muscular dystrophy** — an actively programmed shutdown of muscle energy metabolism, and a cholesterol-driven failure of cellular recycling; both are now therapeutic targets.
+**Rationale.** Antibodies pose a dual challenge. In gene therapy, pre-existing neutralising antibodies exclude 30–60% of patients from systemic treatment and post-treatment immunity prevents re-administration. Beyond gene therapy, pathogenic IgGs are direct disease drivers in autoimmune conditions such as myasthenia gravis. Existing IgG-lowering strategies act non-selectively (FcRn antagonists), transiently and immunogenically (bacterial IdeS), or only partially (Seldegs) — none combines antigen specificity with catalytic, irreversible elimination.
 
----
+Building on the protein-design expertise developed for capsid engineering, I designed synthetic bifunctional proteins that harness the cation-independent mannose-6-phosphate receptor (CI-M6PR / IGF2R) to route target IgGs to complete lysosomal degradation — a LYTAC-inspired mechanism distinct from recycling inhibition or extracellular cleavage (Patent EP25306380.4).
 
-## Applications Across Disease
+### Global IgG degradation to overcome humoral barriers
 
-The platform was built for muscular dystrophy, but it is deliberately general. Current and planned applications span:
+**Objective.** To develop IgG degraders (Iggd) that lower circulating anti-AAV antibodies enough to enable vector transduction in seropositive patients and restore eligibility for re-administration. Our lead candidate **Iggd8** drives rapid, efficient lysosomal IgG degradation with broad cross-species recognition, outperforms IdeS in restoring AAV transduction *in vitro*, and substantially reduces circulating IgG within 24 hours *in vivo*. This axis is developed in direct synergy with immune-evasive capsid engineering, pairing host-directed antibody depletion with vector-directed immune evasion.
 
-| Area | Target | Status |
-|------|--------|--------|
-| Duchenne muscular dystrophy | Skeletal muscle + muscle stem cells | ANR JCJC project, 2026–2029 |
-| Limb-girdle muscular dystrophies | Skeletal muscle | Preclinical, published efficacy |
-| Cardiac disease & heart failure | Heart + skeletal muscle | Doctoral project, 2025–2028 |
-| Myasthenia gravis | Pathogenic autoantibodies | Doctoral project, 2026–2029 |
-| Neurological disease | Brain, via the blood-brain barrier | Lead candidates in testing |
-| Myotonic dystrophy, FSHD, metabolic disease | Various | Academic & industry collaborations |
+### Selective autoantibody degradation in myasthenia gravis
+
+**Rationale.** Myasthenia gravis (~20,000 patients in France) is a prototypic IgG-mediated autoimmune disease; ~85% of patients carry pathogenic anti-acetylcholine-receptor (AChR) IgGs. All current IgG-lowering therapies deplete pathogenic and protective antibodies alike.
+
+**Objective.** To reprogram the degradation technology from global to **antigen-specific** clearance by replacing its generic IgG-binding module with AI-designed epitope-mimetic mini-proteins that reproduce the main immunogenic region of the AChR α1 subunit — selectively capturing and degrading pathogenic anti-AChR IgGs while sparing protective immunity. If validated, this establishes a generalisable paradigm for any antibody-mediated autoimmune disease with a defined antigen. *In collaboration with the Le Panse laboratory (INSERM UMR 974, Institut de Myologie, Paris).*
 
 ---
 
 ## Collaborations
 
-The LICA vectors and the protein-degradation platform are used by partners across Europe and the US, including Sorbonne Université and the Institut de Myologie (myotonic dystrophy, myasthenia gravis, Brugada syndrome), the IGBMC (muscle-directed delivery), Université Paris-Saclay / CNRS (brain delivery), the University of Nevada and Renogenyx (FSHD, US), and Neocor Therapeutics (cardiac fibrosis).
+The LICA vectors and the protein-degradation platform are deployed with academic and industrial partners across Europe and the US:
+
+| Partner | Institution | Focus |
+|---|---|---|
+| Denis Furling | Sorbonne Université, INSERM UMR-S 974 | Myotonic dystrophy type 1 — LICA1 / LICA3 |
+| Peter L. Jones | University of Nevada · Renogenyx (US) | Facioscapulohumeral muscular dystrophy (FSHD) — LICA1 / LICA3 |
+| Eric Hajduch | Sorbonne Université, INSERM UMR-S 1166 | Type 2 diabetes & insulin resistance — LICA3 / AAV8 |
+| Hervé Le Stunff | Université Paris-Saclay, CNRS UMR 9197 | Brain-targeted capsid — microglia & hypothalamus |
+| Nathalie Neyroud | Sorbonne Université, INSERM UMR-S 1166 | Brugada syndrome — LICA3 |
+| Francesca Rochais | Neocor Therapeutics (France) | Cardiac fibrosis — LICA3 |
+| Jocelyn Laporte | IGBMC (France) | Muscle-directed nanoparticle delivery |
+| Rozen Le Panse | Sorbonne Université, INSERM U974 | Selective autoantibody degradation — myasthenia gravis (Iggd8) |
 
 I welcome new academic collaborations and industrial licensing discussions — [get in touch](mailto:avuhong@genethon.fr).
+
+---
+
+## Supervision & management
+
+**Research engineers** — Nathalie Bourg-Alibert (2025–present), Eva Petat (2023–present), Laurence Suel (2021–present), Alejandro Arco Hierves (2022–2023).
+
+**PhD students**
+
+- **Thu Trang Dao** (2026–2029, co-supervisor) — *Synthetic immunobiology for the targeted degradation of autoantibodies in autoimmune myasthenia.*
+- **Farasoa Razafinome** (2025–2028, co-director, 50%) — *Engineering next-generation AAV vectors for versatile gene therapy applications in heart diseases.*
+- **Corentin Azzoun** (2025–2028, co-director, 25%) — *AAV gene therapy approaches for Duchenne muscular dystrophy.*
+
+**Master's students** — Duc Thien Nguyen (M1, 2026), Teimurazi Gochitashvili (M2, 2022), Carolina Pacheco Algalan (M2, 2022), Grégoire Davignon (M2, 2020), Clara Mendes (M2, 2020), Nicolas Sandoval Villegas (M2, 2019).
+
+*All positions at Genethon · Université Paris-Saclay · INSERM Integrare UMR-S 951.*
 
 ---
 
