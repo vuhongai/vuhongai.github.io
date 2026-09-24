@@ -28,4 +28,28 @@
 <!-- AOS (Animate On Scroll) -->
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 
+<!-- AOS fail-safe -------------------------------------------------------
+     aos.css (loaded above, after main.css) sets every [data-aos] element
+     to opacity:0 and relies on the AOS JavaScript to reveal it on scroll.
+     If that CDN script is slow, blocked, or misfires (e.g. it initialises
+     after DOMContentLoaded has already fired, so above-the-fold elements
+     never receive .aos-animate), the content stays invisible and the page
+     looks blank. These rules make [data-aos] content visible
+     unconditionally and provide a dependency-free CSS entrance animation,
+     so the site can never render blank regardless of the AOS script. -->
+<style>
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: aosEntrance 0.6s ease-out both;
+  }
+  @keyframes aosEntrance {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    [data-aos] { animation: none; }
+  }
+</style>
+
 <!-- end custom head snippets -->
