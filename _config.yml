@@ -22,14 +22,14 @@ repository               : "vuhongai/vuhongai.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : # no profile photo
   name             : "Ai Vu Hong"
   pronouns         : # example: "she/her"
   bio              : "Research Scientist · Genethon · Designing safer, smarter gene therapies"
   location         : "Évry, France"
   employer         : "Genethon"
   uri              : # URL
-  email            : "vuhongai@gmail.com" 
+  email            : "avuhong@genethon.fr"
 
   # Academic websites
   academia         : # URL
