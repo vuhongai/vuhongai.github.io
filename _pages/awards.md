@@ -8,7 +8,7 @@ hide_page_title: true
 
 <div class="hero-section" data-aos="fade-up" style="padding-bottom:0.5rem;">
   <h1 class="hero-name" style="font-size:2.4rem;">Awards &amp; Achievements</h1>
-  <p class="hero-affiliation">Competitive funding, scientific recognition, and intellectual property.</p>
+  <p class="hero-affiliation">Research funding, scientific recognition, and intellectual property.</p>
 </div>
 
 <div class="stats-row" data-aos="fade-up" style="margin-top:1.2rem;">
@@ -18,15 +18,11 @@ hide_page_title: true
   </div>
   <div class="stat-item">
     <span class="stat-number" data-countup="4">4</span>
-    <span class="stat-label">Grants as (Co-)PI</span>
+    <span class="stat-label">Grants as PI</span>
   </div>
   <div class="stat-item">
     <span class="stat-number" data-countup="7">7</span>
-    <span class="stat-label">Patent Families</span>
-  </div>
-  <div class="stat-item">
-    <span class="stat-number" data-countup="13">13</span>
-    <span class="stat-label">Awards &amp; Fellowships</span>
+    <span class="stat-label">Patents</span>
   </div>
 </div>
 
@@ -34,15 +30,13 @@ hide_page_title: true
 
 ## Research Grants
 
-Funding won in open national and regional competition, as principal or co-investigator. Together these support a team of three doctoral researchers and the technology-transfer of the LICA vector platform.
-
 <div class="award-group" data-aos="fade-up">
 
   <div class="award-item">
     <div class="award-year">2026–2029</div>
     <div class="award-body">
-      <strong>ANR AAPG — JCJC (Young Investigator)</strong><span class="award-amount">321 k€</span>
-      <span class="award-note"><em>AAV-SkEdit</em> — Engineering dual-tropism AAV for stable gene editing of muscle stem cells and myofibers in Duchenne muscular dystrophy. France's flagship young-investigator award, funding my independent research line.</span>
+      <strong>ANR AAPG JCJC (Young Investigator)</strong><span class="award-amount">321 k€</span>
+      <span class="award-note"><em>AAV-SkEdit</em> — Engineering dual-tropism AAV for stable gene editing of muscle stem cells and myofibers in Duchenne muscular dystrophy.</span>
     </div>
   </div>
 
@@ -66,7 +60,7 @@ Funding won in open national and regional competition, as principal or co-invest
     <div class="award-year">2023–2024</div>
     <div class="award-body">
       <strong>SATT Paris-Saclay — POC'UP</strong><span class="award-amount">100 k€</span>
-      <span class="award-note"><em>OPTAV</em> — Comprehensive AAV design by AI. A technology-transfer grant to mature the AI capsid-design platform toward licensing.</span>
+      <span class="award-note"><em>OPTAV</em> — Comprehensive AAV design by AI.</span>
     </div>
   </div>
 
@@ -98,7 +92,7 @@ Funding won in open national and regional competition, as principal or co-invest
     <div class="award-year">2023</div>
     <div class="award-body">
       <strong>Excellence in Research Award</strong>
-      <span class="award-note">American Society of Gene &amp; Cell Therapy (ASGCT), USA — the society's principal distinction for outstanding research.</span>
+      <span class="award-note">American Society of Gene &amp; Cell Therapy (ASGCT), USA.</span>
     </div>
   </div>
 
@@ -113,8 +107,16 @@ Funding won in open national and regional competition, as principal or co-invest
   <div class="award-item">
     <div class="award-year">2023</div>
     <div class="award-body">
-      <strong>3rd &amp; 4th place — Cancer Immunotherapy Data Science Challenges</strong>
-      <span class="award-note">Broad Institute of MIT and Harvard &amp; Topcoder — international machine-learning competitions on reprogramming T cells to combat tumors.</span>
+      <strong>3rd place — Cancer Immunotherapy Data Science Challenge 2</strong>
+      <span class="award-note">Broad Institute of MIT and Harvard &amp; Topcoder "Reprogramming T cells to combat tumors".</span>
+    </div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-year">2023</div>
+    <div class="award-body">
+      <strong>4th place — Cancer Immunotherapy Data Science Challenge 1</strong>
+      <span class="award-note">Broad Institute of MIT and Harvard &amp; Topcoder "Reprogramming T cells to combat tumors".</span>
     </div>
   </div>
 
@@ -140,15 +142,13 @@ Funding won in open national and regional competition, as principal or co-invest
 
 ## Patents
 
-Seven patent families protect the LICA vector platform, the AI design methods, and the protein-degradation technology. All are co-held with I. Richard and are now used in academic and industrial collaborations.
-
 <div class="award-group" data-aos="fade-up">
 
   <div class="award-item">
     <div class="award-year">Platform</div>
     <div class="award-body">
       <strong>Accurate prediction of multiple AAV properties by deep learning</strong>
-      <span class="award-note">PCT/EP2024/082609 — the AI engine behind multi-parameter capsid design.</span>
+      <span class="award-note">PCT/EP2024/082609</span>
     </div>
   </div>
 
@@ -172,12 +172,12 @@ Seven patent families protect the LICA vector platform, the AI design methods, a
     <div class="award-year">Immunity</div>
     <div class="award-body">
       <strong>Lysosome-targeting immunoglobulin degradation</strong>
-      <span class="award-note">EP25306380.4 — the basis of the selective autoantibody-degradation programme.</span>
+      <span class="award-note">EP25306380.4.</span>
     </div>
   </div>
 
   <div class="award-item">
-    <div class="award-year">In prep.</div>
+    <div class="award-year">Immunity.</div>
     <div class="award-body">
       <strong>TNF-degrading proteins for chronic inflammatory conditions</strong>
       <span class="award-note">Patent in preparation.</span>
@@ -218,8 +218,13 @@ Seven patent families protect the LICA vector platform, the AI design methods, a
   </div>
 
   <div class="award-item">
-    <div class="award-year">2011–2012</div>
-    <div class="award-body"><strong>Third prizes — National Mathematical Olympiad</strong><span class="award-note">Vietnam, two consecutive years.</span></div>
+    <div class="award-year">2012</div>
+    <div class="award-body"><strong>Third prizes — National Mathematical Olympiad</strong><span class="award-note">Vietnam.</span></div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-year">2011</div>
+    <div class="award-body"><strong>Third prizes — National Mathematical Olympiad</strong><span class="award-note">Vietnam.</span></div>
   </div>
 
 </div>
