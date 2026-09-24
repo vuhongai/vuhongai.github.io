@@ -12,7 +12,7 @@ site_theme               : "elegant" # The available themes options are "default
 title                    : "Ai Vu Hong · Research Scientist"
 title_separator          : "·"
 name                     : &name "Ai Vu Hong"
-description              : &description "Research Scientist at Genethon — designing gene therapies with AI, protein engineering, and disease biology"
+description              : &description "Research Scientist"
 url                      : https://vuhongai.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "vuhongai/vuhongai.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : # no profile photo
   name             : "Ai Vu Hong"
   pronouns         : # example: "she/her"
-  bio              : "Research Scientist · Genethon · Designing safer, smarter gene therapies"
+  bio              : "Research Scientist, Inventor"
   location         : "Évry, France"
   employer         : "Genethon"
   uri              : # URL
@@ -41,7 +41,7 @@ author:
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Ai-Vu-4?ev=hdr_xprf"
   scopus           : # URL
   zotero           : # URL
 
@@ -65,7 +65,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "vuhongai"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
