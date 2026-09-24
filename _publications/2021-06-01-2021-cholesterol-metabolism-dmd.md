@@ -16,6 +16,4 @@ featured: true
 citation: 'Amor, F.*, Vu Hong, A.*, Corre, G., Sanson, M., Suel, L., Blaie, S., Servais, L., Voit, T., Richard, I., Israeli, D. (2021). Cholesterol metabolism is a potential therapeutic target in Duchenne muscular dystrophy. Journal of Cachexia, Sarcopenia and Muscle. 12, 677–693.'
 ---
 
-Cholesterol accumulates in dystrophic muscle in both mice and patients; lowering it with a statin eases disease, identifying an actionable metabolic target in DMD.
-
 [Read the paper →](https://doi.org/10.1002/jcsm.12708)

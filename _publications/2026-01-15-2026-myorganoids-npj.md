@@ -16,6 +16,4 @@ featured: false
 citation: 'Palmieri, L., Bimbi, G., Ferrand, M., Marcello, M., Pili, L., Vu Hong, A., Jaber, A., El-Khoury, R., Brochier, G., Bigot, A., Israeli, D., et al. (2026). Disease exacerbation in human DMD MYOrganoids enables gene therapy evaluation and unveils persistence of fibrotic activity. npj Regenerative Medicine. 11, 2.'
 ---
 
-A human 3D muscle organoid model of Duchenne muscular dystrophy that reproduces disease features, enabling gene therapy evaluation and revealing that fibrotic activity persists after treatment.
-
 [Read the paper →](https://doi.org/10.1038/s41536-025-00445-8)

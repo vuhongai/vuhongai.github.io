@@ -16,6 +16,4 @@ featured: false
 citation: 'Palmieri, L., Ferrand, M., Vu Hong, A., Richard, I., Albini, S. (2024). In silico structural prediction for the generation of novel performant midi-dystrophins based on an intein-mediated dual-AAV approach. International Journal of Molecular Sciences. 25, 10444.'
 ---
 
-Structure-guided design of split-intein dystrophin constructs to deliver larger, more functional dystrophins through a dual-AAV strategy.
-
 [Read the paper →](https://doi.org/10.3390/ijms251910444)

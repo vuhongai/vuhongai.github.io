@@ -16,6 +16,4 @@ featured: true
 citation: 'Vu Hong, A.*#, Suel, L.*, Petat, E., Dubois, A., Le Brun, P.-R., Guerchet, N., Veron, P., Poupiot, J., Richard, I.# (2024). An engineered AAV targeting integrin alpha V beta 6 presents improved myotropism across species. Nature Communications. 15, 7965.'
 ---
 
-LICA1, the first rationally designed, receptor-guided myotropic AAV: efficient muscle delivery with strong liver detargeting across species, and therapeutic benefit at a twenty-fold lower dose.
-
 [Read the paper →](https://doi.org/10.1038/s41467-024-52002-4)

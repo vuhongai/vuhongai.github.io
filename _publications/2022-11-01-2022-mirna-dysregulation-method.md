@@ -16,6 +16,4 @@ featured: false
 citation: 'Israeli, D., Vu Hong, A., Corre, G., Miagoux, Q., Richard, I. (2022). Deciphering the molecular mechanism of incurable muscle disease by a novel method for the interpretation of miRNA dysregulation. Non-coding RNA. 8, 48.'
 ---
 
-A host-gene-based framework that turns complex miRNA dysregulation signatures into interpretable, mechanistic disease pathways.
-
 [Read the paper →](https://doi.org/10.3390/ncrna8040048)
