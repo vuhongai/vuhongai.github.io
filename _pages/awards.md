@@ -172,7 +172,7 @@ hide_page_title: true
     <div class="award-year">Immunity</div>
     <div class="award-body">
       <strong>Lysosome-targeting immunoglobulin degradation</strong>
-      <span class="award-note">EP25306380.4.</span>
+      <span class="award-note">PCT/IB2026/000460.</span>
     </div>
   </div>
 
