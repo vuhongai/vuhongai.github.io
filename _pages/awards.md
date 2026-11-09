@@ -13,10 +13,6 @@ hide_page_title: true
 
 <div class="stats-row" data-aos="fade-up" style="margin-top:1.2rem;">
   <div class="stat-item">
-    <span class="stat-number" data-countup="691" data-suffix=" k€">691 k€</span>
-    <span class="stat-label">Funding Secured</span>
-  </div>
-  <div class="stat-item">
     <span class="stat-number" data-countup="4">4</span>
     <span class="stat-label">Grants as PI</span>
   </div>
@@ -35,7 +31,7 @@ hide_page_title: true
   <div class="award-item">
     <div class="award-year">2026–2029</div>
     <div class="award-body">
-      <strong>ANR AAPG JCJC (Young Investigator)</strong><span class="award-amount">321 k€</span>
+      <strong>ANR AAPG JCJC (Young Investigator)</strong>
       <span class="award-note"><em>AAV-SkEdit</em> — Engineering dual-tropism AAV for stable gene editing of muscle stem cells and myofibers in Duchenne muscular dystrophy.</span>
     </div>
   </div>
@@ -43,7 +39,7 @@ hide_page_title: true
   <div class="award-item">
     <div class="award-year">2026–2029</div>
     <div class="award-body">
-      <strong>DIM BioConvS — Doctoral Fellowship</strong><span class="award-amount">135 k€</span>
+      <strong>DIM BioConvS — Doctoral Fellowship</strong>
       <span class="award-note"><em>SYNPAD-MG</em> — Synthetic immunobiology for precision autoantibody degradation in myasthenia gravis, with the Institut de Myologie.</span>
     </div>
   </div>
@@ -51,7 +47,7 @@ hide_page_title: true
   <div class="award-item">
     <div class="award-year">2025–2028</div>
     <div class="award-body">
-      <strong>DIM BioConvS — Doctoral Fellowship</strong><span class="award-amount">135 k€</span>
+      <strong>DIM BioConvS — Doctoral Fellowship</strong>
       <span class="award-note"><em>ENGAGE-Heart</em> — Engineering next-generation AAV vectors for gene therapy in heart diseases.</span>
     </div>
   </div>
@@ -59,7 +55,7 @@ hide_page_title: true
   <div class="award-item">
     <div class="award-year">2023–2024</div>
     <div class="award-body">
-      <strong>SATT Paris-Saclay — POC'UP</strong><span class="award-amount">100 k€</span>
+      <strong>SATT Paris-Saclay — POC'UP</strong>
       <span class="award-note"><em>OPTAV</em> — Comprehensive AAV design by AI.</span>
     </div>
   </div>
